@@ -5,7 +5,7 @@
 
 int minimumJump(int arr[], int n)
 {
-    int* dp = (int*)malloc(n * sizeof(int));
+    int* dp = new int[n];
     dp[0] = 0;
     if (n == 0 || arr[0] = 0)
         return -1;

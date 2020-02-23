@@ -5,10 +5,9 @@ Example :
 The sequence 2, 4, 1, 3, 5 has three inversions(2, 1), (4, 1), (4, 3).
 */
 
-// 1. Simple method : For each element, count number of elements which are on right side of it and are smaller than it.
-
 #include <iostream>
-using namespace std;
+
+// 1. Simple method : For each element, count number of elements which are on right side of it and are smaller than it.
 
 /*
 int getInvCount(int arr[], int n)
@@ -26,7 +25,7 @@ int main()
 {
     int arr[] = { 1, 20, 6, 4, 5 };
     int n = sizeof(arr) / sizeof(arr[0]);
-    cout << "Number of inversions are "
+    std::cout << "Number of inversions are "
         << getInvCount(arr, n);
     return 0;
 }
@@ -40,9 +39,8 @@ int merge(int arr[], int l, int m, int r)
     int i, j, k;
     int n1 = m - l + 1;
     int n2 = r - m;
-    //int L[n1], R[n2];
-    int* L = (int*)malloc(n1 * sizeof(int));
-    int* R = (int*)malloc(n2 * sizeof(int));
+    int* L = new int[n1];
+    int* R = new int[n2];
     for (i = 0; i < n1; i++)
         L[i] = arr[l + i];
     for (j = 0; j < n2; j++)
@@ -98,7 +96,7 @@ int main()
     //int arr[] = { 1, 20, 6, 4, 5 };
     int arr[] = { 1, 4, 3, 2, 5 };
     int n = sizeof(arr) / sizeof(arr[0]);
-    cout << "Number of inversions are "
+    std::cout << "Number of inversions are "
         << mergeSort(arr, 0,n-1);
     return 0;
 }
