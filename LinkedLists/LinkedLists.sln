@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReverseALinkedListInGroupsO
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DetectAndRemoveLoopInLinkedList", "DetectAndRemoveLoopInLinkedList\DetectAndRemoveLoopInLinkedList.vcxproj", "{3FA58BA9-4BDE-473B-8C4B-6FDA89C8647D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RotateLinkedListCounterClockwiseByKNodes", "RotateLinkedListCounterClockwiseByKNodes\RotateLinkedListCounterClockwiseByKNodes.vcxproj", "{00D6C5A7-3854-4A24-8F3B-006541E85D18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{3FA58BA9-4BDE-473B-8C4B-6FDA89C8647D}.Release|x64.Build.0 = Release|x64
 		{3FA58BA9-4BDE-473B-8C4B-6FDA89C8647D}.Release|x86.ActiveCfg = Release|Win32
 		{3FA58BA9-4BDE-473B-8C4B-6FDA89C8647D}.Release|x86.Build.0 = Release|Win32
+		{00D6C5A7-3854-4A24-8F3B-006541E85D18}.Debug|x64.ActiveCfg = Debug|x64
+		{00D6C5A7-3854-4A24-8F3B-006541E85D18}.Debug|x64.Build.0 = Debug|x64
+		{00D6C5A7-3854-4A24-8F3B-006541E85D18}.Debug|x86.ActiveCfg = Debug|Win32
+		{00D6C5A7-3854-4A24-8F3B-006541E85D18}.Debug|x86.Build.0 = Debug|Win32
+		{00D6C5A7-3854-4A24-8F3B-006541E85D18}.Release|x64.ActiveCfg = Release|x64
+		{00D6C5A7-3854-4A24-8F3B-006541E85D18}.Release|x64.Build.0 = Release|x64
+		{00D6C5A7-3854-4A24-8F3B-006541E85D18}.Release|x86.ActiveCfg = Release|Win32
+		{00D6C5A7-3854-4A24-8F3B-006541E85D18}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
