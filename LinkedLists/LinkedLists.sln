@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InsertionInCircularSinglyLi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CircularLinkedListTraversal", "CircularLinkedListTraversal\CircularLinkedListTraversal.vcxproj", "{975EBD60-42E6-4729-91BF-E76045488F7D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SplitCircularLinkedListIntoTwoHalves", "SplitCircularLinkedListIntoTwoHalves\SplitCircularLinkedListIntoTwoHalves.vcxproj", "{8E2A8EA5-18B2-46F6-B63C-D5E76CBC5AE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{975EBD60-42E6-4729-91BF-E76045488F7D}.Release|x64.Build.0 = Release|x64
 		{975EBD60-42E6-4729-91BF-E76045488F7D}.Release|x86.ActiveCfg = Release|Win32
 		{975EBD60-42E6-4729-91BF-E76045488F7D}.Release|x86.Build.0 = Release|Win32
+		{8E2A8EA5-18B2-46F6-B63C-D5E76CBC5AE4}.Debug|x64.ActiveCfg = Debug|x64
+		{8E2A8EA5-18B2-46F6-B63C-D5E76CBC5AE4}.Debug|x64.Build.0 = Debug|x64
+		{8E2A8EA5-18B2-46F6-B63C-D5E76CBC5AE4}.Debug|x86.ActiveCfg = Debug|Win32
+		{8E2A8EA5-18B2-46F6-B63C-D5E76CBC5AE4}.Debug|x86.Build.0 = Debug|Win32
+		{8E2A8EA5-18B2-46F6-B63C-D5E76CBC5AE4}.Release|x64.ActiveCfg = Release|x64
+		{8E2A8EA5-18B2-46F6-B63C-D5E76CBC5AE4}.Release|x64.Build.0 = Release|x64
+		{8E2A8EA5-18B2-46F6-B63C-D5E76CBC5AE4}.Release|x86.ActiveCfg = Release|Win32
+		{8E2A8EA5-18B2-46F6-B63C-D5E76CBC5AE4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
