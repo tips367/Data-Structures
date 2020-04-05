@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergeTwoSortedLinkedLists", "MergeTwoSortedLinkedLists\MergeTwoSortedLinkedLists.vcxproj", "{92CBC4E8-A84A-430E-B240-7B46351C79F1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReverseALinkedList", "ReverseALinkedList\ReverseALinkedList.vcxproj", "{95A79D3B-67A9-406E-81DB-5041DB1CA449}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReverseASinglyLinkedList", "ReverseALinkedList\ReverseALinkedList.vcxproj", "{95A79D3B-67A9-406E-81DB-5041DB1CA449}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SwapNodesInLinkedListWithoutSwappingData", "SwapNodesInLinkedListWithoutSwappingData\SwapNodesInLinkedListWithoutSwappingData.vcxproj", "{E28C9392-B164-4740-A479-59BAD0DC2CAF}"
 EndProject
@@ -36,6 +36,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InsertionInDoublyLinkedList", "InsertionInDoublyLinkedList\InsertionInDoublyLinkedList.vcxproj", "{425D859E-A514-4AAA-8340-8981DC3FDD08}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DeletionFromDoublyLinkedList", "DeletionFromDoublyLinkedList\DeletionFromDoublyLinkedList.vcxproj", "{727C6282-8043-47B4-B52E-8CB01B756F9B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReverseADoublyLinkedList", "ReverseADoublyLinkedList\ReverseADoublyLinkedList.vcxproj", "{E12721FF-D13F-4DAF-8A08-38648171C13A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -181,6 +183,14 @@ Global
 		{727C6282-8043-47B4-B52E-8CB01B756F9B}.Release|x64.Build.0 = Release|x64
 		{727C6282-8043-47B4-B52E-8CB01B756F9B}.Release|x86.ActiveCfg = Release|Win32
 		{727C6282-8043-47B4-B52E-8CB01B756F9B}.Release|x86.Build.0 = Release|Win32
+		{E12721FF-D13F-4DAF-8A08-38648171C13A}.Debug|x64.ActiveCfg = Debug|x64
+		{E12721FF-D13F-4DAF-8A08-38648171C13A}.Debug|x64.Build.0 = Debug|x64
+		{E12721FF-D13F-4DAF-8A08-38648171C13A}.Debug|x86.ActiveCfg = Debug|Win32
+		{E12721FF-D13F-4DAF-8A08-38648171C13A}.Debug|x86.Build.0 = Debug|Win32
+		{E12721FF-D13F-4DAF-8A08-38648171C13A}.Release|x64.ActiveCfg = Release|x64
+		{E12721FF-D13F-4DAF-8A08-38648171C13A}.Release|x64.Build.0 = Release|x64
+		{E12721FF-D13F-4DAF-8A08-38648171C13A}.Release|x86.ActiveCfg = Release|Win32
+		{E12721FF-D13F-4DAF-8A08-38648171C13A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
