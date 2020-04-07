@@ -83,12 +83,23 @@ void push(Node** head_ref, int new_data)
     (*head_ref) = new_node;
 }
 
-void printList(Node* node)
+// A utility function to print a doubly linked list in  
+// both forward and backward directions  
+void print(Node* head)
 {
-    while (node != NULL)
+    Node* temp = head;
+    std::cout << "Forward Traversal using next pointer\n";
+    while (head)
     {
-        std::cout << node->data << " ";
-        node = node->next;
+        std::cout << head->data << " ";
+        temp = head;
+        head = head->next;
+    }
+    std::cout << "\nBackward Traversal using prev pointer\n";
+    while (temp)
+    {
+        std::cout << temp->data << " ";
+        temp = temp->prev;
     }
 }
 
@@ -102,13 +113,13 @@ int main()
     push(&a, 3);
     push(&a, 30);
 
-    std::cout << "Linked List before sorting \n";
-    printList(a);
+    std::cout << "Linked List before sorting:\n";
+    print(a);
 
     quickSort(a);
 
-    std::cout << "\nLinked List after sorting \n";
-    printList(a);
+    std::cout << "\n\nLinked List after sorting:\n";
+    print(a);
 
     return 0;
 }
