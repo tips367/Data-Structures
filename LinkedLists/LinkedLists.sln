@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuickSortOnDoublyLinkedList
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergeSortForDoublyLinkedList", "MergeSortForDoublyLinkedList\MergeSortForDoublyLinkedList.vcxproj", "{AA2A8B14-D3AA-4199-AFAD-16CAF83969A6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Insertion Sort for Singly Linked List", "Insertion Sort for Singly Linked List\Insertion Sort for Singly Linked List.vcxproj", "{DC998D8A-524F-4ED3-8E2E-052DDBB6C514}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -211,6 +213,14 @@ Global
 		{AA2A8B14-D3AA-4199-AFAD-16CAF83969A6}.Release|x64.Build.0 = Release|x64
 		{AA2A8B14-D3AA-4199-AFAD-16CAF83969A6}.Release|x86.ActiveCfg = Release|Win32
 		{AA2A8B14-D3AA-4199-AFAD-16CAF83969A6}.Release|x86.Build.0 = Release|Win32
+		{DC998D8A-524F-4ED3-8E2E-052DDBB6C514}.Debug|x64.ActiveCfg = Debug|x64
+		{DC998D8A-524F-4ED3-8E2E-052DDBB6C514}.Debug|x64.Build.0 = Debug|x64
+		{DC998D8A-524F-4ED3-8E2E-052DDBB6C514}.Debug|x86.ActiveCfg = Debug|Win32
+		{DC998D8A-524F-4ED3-8E2E-052DDBB6C514}.Debug|x86.Build.0 = Debug|Win32
+		{DC998D8A-524F-4ED3-8E2E-052DDBB6C514}.Release|x64.ActiveCfg = Release|x64
+		{DC998D8A-524F-4ED3-8E2E-052DDBB6C514}.Release|x64.Build.0 = Release|x64
+		{DC998D8A-524F-4ED3-8E2E-052DDBB6C514}.Release|x86.ActiveCfg = Release|Win32
+		{DC998D8A-524F-4ED3-8E2E-052DDBB6C514}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
