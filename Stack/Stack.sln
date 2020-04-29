@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Implementing Stack using Ar
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Implementing Stack using Linked List", "Implementing Stack using Linked List\Implementing Stack using Linked List.vcxproj", "{76F05CFD-ABC7-4A99-967A-C31D37D01DA3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Infix to Postfix", "Infix to Postfix\Infix to Postfix.vcxproj", "{8AEB2696-8BDF-46D2-81E9-FA6A9819E5FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{76F05CFD-ABC7-4A99-967A-C31D37D01DA3}.Release|x64.Build.0 = Release|x64
 		{76F05CFD-ABC7-4A99-967A-C31D37D01DA3}.Release|x86.ActiveCfg = Release|Win32
 		{76F05CFD-ABC7-4A99-967A-C31D37D01DA3}.Release|x86.Build.0 = Release|Win32
+		{8AEB2696-8BDF-46D2-81E9-FA6A9819E5FD}.Debug|x64.ActiveCfg = Debug|x64
+		{8AEB2696-8BDF-46D2-81E9-FA6A9819E5FD}.Debug|x64.Build.0 = Debug|x64
+		{8AEB2696-8BDF-46D2-81E9-FA6A9819E5FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{8AEB2696-8BDF-46D2-81E9-FA6A9819E5FD}.Debug|x86.Build.0 = Debug|Win32
+		{8AEB2696-8BDF-46D2-81E9-FA6A9819E5FD}.Release|x64.ActiveCfg = Release|x64
+		{8AEB2696-8BDF-46D2-81E9-FA6A9819E5FD}.Release|x64.Build.0 = Release|x64
+		{8AEB2696-8BDF-46D2-81E9-FA6A9819E5FD}.Release|x86.ActiveCfg = Release|Win32
+		{8AEB2696-8BDF-46D2-81E9-FA6A9819E5FD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
