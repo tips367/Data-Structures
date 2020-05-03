@@ -10,9 +10,18 @@ int evaluatePostfix(std::string s)
     int l = s.length();
     for (int i = 0; i < l; i++)
     {
-        if (isdigit(s[i]))
+        if (s[i] == ' ')
+            continue;
+        else if (isdigit(s[i]))
         {
-            st.push(s[i]-'0');
+            int num = 0;
+            while (isdigit(s[i]))
+            {
+                num = num * 10 + (int)(s[i] - '0');
+                i++;
+            }
+            i--;
+            st.push(num);
         }
         else
         {
@@ -46,7 +55,7 @@ int evaluatePostfix(std::string s)
 // Driver program to test above functions  
 int main()
 {
-    std::string postfixExp = "231*+9-";
+    std::string postfixExp = "100 200 + 2 / 5 * 7 + ";
     std::cout << "Postfix expression : " << postfixExp << std::endl;
     std::cout << "Postfix evaluation : " << evaluatePostfix(postfixExp);
     return 0;
