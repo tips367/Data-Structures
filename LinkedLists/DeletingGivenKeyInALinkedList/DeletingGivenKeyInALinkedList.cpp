@@ -72,11 +72,11 @@ int main()
     push(&head, 3);
     push(&head, 2);
 
-    puts("Created Linked List: ");
+    std::cout << "Created Linked list is: ";
     printList(head);
 
     deleteNode(&head, 1);
-    puts("\nLinked List after Deletion of 1: ");
+    std::cout << "\nLinked List after Deletion of 1: ";
 
     printList(head);
 
