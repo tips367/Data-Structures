@@ -23,6 +23,8 @@ public:
     Node* next;
 };
 
+// Method 1
+/*
 void swapNodes(Node** headReference, int x, int y)
 {
     // Nothing to do if x and y are same
@@ -68,6 +70,45 @@ void swapNodes(Node** headReference, int x, int y)
     Node* temp = currentY->next;
     currentY->next = currentX->next;
     currentX->next = temp;
+}
+*/
+
+// Method 2. Optimized
+void swap(Node*& a, Node*& b)
+{
+    Node* temp = a;
+    a = b;
+    b = temp;
+}
+
+void swapNodes(Node** headReference, int x, int y)
+{
+
+    // Nothing to do if x and y are same
+    if (x == y)
+        return;
+
+    Node** a = NULL;
+    Node** b = NULL;
+
+    // search for x and y in the linked list and store therir pointer in a and b
+    while (*headReference) {
+
+        if ((*headReference)->data == x) {
+            a = headReference;
+        }
+        else if ((*headReference)->data == y) {
+            b = headReference;
+        }
+        headReference = &((*headReference)->next);
+    }
+
+    // if we have found both a and b in the linked list, swap current pointer and next pointer of these
+    if (a && b) 
+    {
+        swap(*a, *b);
+        swap(((*a)->next), ((*b)->next));
+    }
 }
 
 // Utility function to print a linked list
