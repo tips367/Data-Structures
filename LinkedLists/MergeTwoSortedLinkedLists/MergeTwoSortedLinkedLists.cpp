@@ -1,5 +1,10 @@
-// MergeTwoSortedLinkedLists.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/* Write a SortedMerge() function that takes two lists, each of which is sorted in increasing order, and merges the two together 
+into one list which is in increasing order. SortedMerge() should return the new list. The new list should be made by splicing 
+together the nodes of the first two lists.
+
+For example if the first linked list a is 5->10->15 and the other linked list b is 2->3->20, 
+then SortedMerge() should return a pointer to the head node of the merged list 2->3->5->10->15->20.
+*/
 
 #include <iostream>
 #include <assert.h>
@@ -24,22 +29,21 @@ dest == {1, 1, 2, 3} */
 
 void moveNode(Node** destRef, Node** sourceRef)
 {
-    /* the front source node */
+    // the front source node
     Node* newNode = *sourceRef;
     assert(newNode != NULL);
 
-    /* Advance the source pointer */
+    // Advance the source pointer
     *sourceRef = newNode->next;
 
-    /* Link the old dest off the new node */
+    // Link the old dest off the new node
     newNode->next = *destRef;
 
-    /* Move dest to point to the new node */
+    // Move dest to point to the new node
     *destRef = newNode;
 }
 
 // 1. Using dummy node
-
 Node* sortedMerge(Node* a, Node* b)
 {
     // a dummy first node to hang the result on
@@ -71,10 +75,49 @@ Node* sortedMerge(Node* a, Node* b)
         tail = tail->next;
     }
     return (dummy.next);
-}
+} 
 
-// 2. Using Recursion
+// 2. Another approach
+/*
+Node* sortedMerge(Node* a, Node* b)
+{
+    // a dummy first node to hang the result on
+    Node dummy;
 
+    // tail points to the last result node 
+    Node* tail = &dummy;
+
+    // so tail->next is the place to add new nodes to the result. 
+    dummy.next = NULL;
+    while (1)
+    {
+        if (a == NULL)
+        {
+            // if either list runs out, use the other list 
+            tail->next = b;
+            break;
+        }
+        if (b == NULL)
+        {
+            tail->next = a;
+            break;
+        }
+        if (a->data <= b->data)
+        {
+            tail->next = a;
+            a = a->next;
+        }
+        else
+        {
+            tail->next = b;
+            b = b->next;
+        }
+        tail = tail->next;
+    }
+    return (dummy.next);
+} */
+
+// 3. Using Recursion
 /*
 Node* sortedMerge(Node* a, Node* b)
 {
