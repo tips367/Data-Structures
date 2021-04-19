@@ -10,6 +10,8 @@ public:
     Node* next;
 };
 
+// Split the nodes of the given list into front and back halves, and return the two lists using the reference parameters.
+// If the length is odd, the extra node should go in the front list.
 void frontBackSplit(Node* source, Node** frontRef, Node** backRef)
 {
     Node* slow;

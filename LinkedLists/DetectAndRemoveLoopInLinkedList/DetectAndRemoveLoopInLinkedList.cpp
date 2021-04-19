@@ -70,10 +70,20 @@ void removeLoop(Node* loopNode, Node* head)
 {
 	Node* ptr1 = head;
 	Node* ptr2 = loopNode;
-	while (ptr1->next != ptr2->next)
+	// this check is needed when slow and fast both meet at the head of the LL
+	// eg: 1->2->3->4->5 and then 5->next = 1 i.e the head of the LL
+	if (ptr1 == ptr2)
 	{
-		ptr1 = ptr1->next;
-		ptr2 = ptr2->next;
+		while (ptr2->next != ptr1)
+			ptr2 = ptr2->next;
+	}
+	else
+	{
+		while (ptr1->next != ptr2->next)
+		{
+			ptr1 = ptr1->next;
+			ptr2 = ptr2->next;
+		}
 	}
 	ptr2->next = NULL;
 }

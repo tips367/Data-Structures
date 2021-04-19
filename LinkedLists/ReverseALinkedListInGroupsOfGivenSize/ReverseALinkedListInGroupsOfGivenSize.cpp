@@ -1,5 +1,13 @@
-// ReverseALinkedListInGroupsOfGivenSize.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/* Given a linked list, write a function to reverse every k nodes(where k is an input to the function).
+
+Examples:
+
+Input: 1->2->3->4->5->6->7->8->NULL, K = 3
+Output: 3->2->1->6->5->4->8->7->NULL
+
+Input: 1->2->3->4->5->6->7->8->NULL, K = 5
+Output: 5->4->3->2->1->8->7->6->NULL
+*/
 
 #include <iostream>
 
@@ -17,7 +25,7 @@ Node* reverse(Node* head, int k)
 	Node* next = NULL;
 	int count = 0;
 
-	/*reverse first k nodes of the linked list */
+	// reverse first k nodes of the linked list
 	while (current != NULL && count < k)
 	{
 		next = current->next;
@@ -33,7 +41,7 @@ Node* reverse(Node* head, int k)
 	{
 		head->next = reverse(next, k);
 	}
-	/* prev is new head of the input list */
+	// prev is new head of the input list
 	return prev;
 }
 
