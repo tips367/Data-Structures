@@ -1,5 +1,6 @@
-// RotateLinkedListCounterClockwiseByKNodes.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/* Given a singly linked list, rotate the linked list counter-clockwise by k nodes. Where k is a given positive integer. 
+For example, if the given linked list is 10->20->30->40->50->60 and k is 4, the list should be modified to 50->60->10->20->30->40. 
+*/
 
 #include <iostream>
 
@@ -23,6 +24,7 @@ int getCount(Node* head)
 	return count;
 }
  
+// Method 1
 void rotate(Node** headRef, int k)
 {
 	if (k == 0)
@@ -54,7 +56,37 @@ void rotate(Node** headRef, int k)
 	*headRef = kthNode->next;
 	// change next of kth node to NULL
 	kthNode->next = NULL;
-}
+} 
+
+// Method 2. We can first make the linked list circular and then moving k-1 steps forward from head node, 
+// making it null and make kth node as head.
+/*
+void rotate(Node** headRef, int k)
+{
+	if (k == 0)
+		return;
+
+	// For handling k greater than the number of nodes in list
+	Node* current = *headRef;
+	int numNodes = getCount(current);
+	if (k > numNodes)
+		k = k % numNodes;
+
+	// traverse till the end
+	while (current->next != NULL)
+		current = current->next;
+
+	current->next = *headRef;
+	current = *headRef;
+
+	// traverse the linked list to k-1 position which will be last element for rotated array.
+	for (int i = 0; i < k - 1; i++)
+		current = current->next;
+
+	// update the head_ref and last element pointer to NULL
+	*headRef = current->next;
+	current->next = NULL;
+} */
 
 /* Utility Function to insert a node at
 the beginging of the linked list */
