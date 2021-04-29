@@ -45,12 +45,12 @@ void infixToPostfix(std::string s)
             }
             if (st.top() == '(')
             {
-                char c = st.top();
                 st.pop();
             }
         }
         //If an operator is scanned 
-        else {
+        else 
+        {
             while (st.top() != '#' && precedence(s[i]) <= precedence(st.top()))
             {
                 char c = st.top();
