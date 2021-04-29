@@ -1,5 +1,6 @@
 /* Given an array, print the Next Greater Element (NGE) for every element. The Next greater Element for an element x 
-is the first greater element on the right side of x in array. Elements for which no greater element exist, consider next greater element as -1.
+is the first greater element on the right side of x in array. Elements for which no greater element exist, 
+consider next greater element as -1.
 
 Example:
 for the input array [4, 5, 2, 25]
@@ -30,7 +31,7 @@ void printNextGreaterElement(int arr[], int n)
             std::cout << st.top() << " --> " << arr[i] << std::endl;
             st.pop();
         }
-        /* push next to stack so that we can find next greater for it */
+        // push next to stack so that we can find next greater for it
         st.push(arr[i]);
     }
     while (!st.empty())

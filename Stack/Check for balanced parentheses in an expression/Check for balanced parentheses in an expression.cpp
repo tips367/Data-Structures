@@ -1,5 +1,14 @@
-// Check for balanced parentheses in an expression.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/* Given an expression string exp, write a program to examine whether the pairs and the orders of 
+“{“, “}”, “(“, “)”, “[“, “]” are correct in exp.
+
+Example:
+
+Input: exp = “[()]{}{[()()]()}”
+Output: Balanced
+
+Input: exp = “[(])”
+Output: Not Balanced
+*/
 
 #include <iostream>
 #include <stack>
@@ -9,13 +18,16 @@ bool areParenthesisBalanced(std::string  expr)
     std::stack<char> st;
     int n = expr.length();
     char x;
-    for (int i = 0; i < n; i++)
+    for(int i = 0; i < n; i++)
     {
         if (expr[i] == '(' || expr[i] == '[' || expr[i] == '{')
         {
             st.push(expr[i]);
             continue;
         }
+
+        // If current current character is not opening bracket, then it must be closing. So stack
+        // cannot be empty at this point.
         if (st.empty())
             return false;
         x = st.top();
