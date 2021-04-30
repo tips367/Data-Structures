@@ -1,6 +1,6 @@
-/* Given an array, print the Next Greater Element (NGE) for every element. The Next greater Element for an element x 
-is the first greater element on the right side of x in array. Elements for which no greater element exist, 
-consider next greater element as -1.
+/* Given an array, print the Next Greater Element (NGE) for every element. The Next greater Element for an element x
+is the first greater element on the right side of x in array. Elements for which no greater element exist,
+consider next greater element as -1. The next greater elements should be printed in same order as input array.
 
 Example:
 for the input array [4, 5, 2, 25]
@@ -13,10 +13,12 @@ Element         NGE
 
 #include <iostream>
 #include <stack>
+#include <unordered_map>
 
 void printNextGreaterElement(int arr[], int n)
 {
     std::stack<int> st;
+    std::unordered_map<int, int> map;
     // push first element to stack
     st.push(arr[0]);
     for (int i = 1; i < n; i++)
@@ -28,18 +30,21 @@ void printNextGreaterElement(int arr[], int n)
         }
         while (st.empty() == false && st.top() < arr[i])
         {
-            std::cout << st.top() << " --> " << arr[i] << std::endl;
+            map[st.top()] = arr[i];
             st.pop();
         }
         // push next to stack so that we can find next greater for it
         st.push(arr[i]);
     }
-    // After iterating over the loop, the remaining elements in stack do not have the next greater element, so print -1 for them 
+    // After iterating over the loop, the remaining elements in stack do not have the next greater element, so store -1 for them 
     while (!st.empty())
     {
-        std::cout << st.top() << " --> " << -1 << std::endl;
+        map[st.top()] = -1;
         st.pop();
     }
+
+    for (int i = 0; i < n; i++)
+        std::cout << arr[i] << " --> " << map[arr[i]] << std::endl;
 }
 
 /* Driver program to test above functions */

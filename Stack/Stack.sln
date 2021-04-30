@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Check for balanced parenthe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Next Greater Element", "Next Greater Element\Next Greater Element.vcxproj", "{935E64C0-C7CE-4942-B80D-7D0A38B1BCF7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Next Greater Element In Same Order As Input", "Next Greater Element In Same Order As Input\Next Greater Element In Same Order As Input.vcxproj", "{7CDA7C5A-7213-494E-B88F-65D50B8C3F1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{935E64C0-C7CE-4942-B80D-7D0A38B1BCF7}.Release|x64.Build.0 = Release|x64
 		{935E64C0-C7CE-4942-B80D-7D0A38B1BCF7}.Release|x86.ActiveCfg = Release|Win32
 		{935E64C0-C7CE-4942-B80D-7D0A38B1BCF7}.Release|x86.Build.0 = Release|Win32
+		{7CDA7C5A-7213-494E-B88F-65D50B8C3F1E}.Debug|x64.ActiveCfg = Debug|x64
+		{7CDA7C5A-7213-494E-B88F-65D50B8C3F1E}.Debug|x64.Build.0 = Debug|x64
+		{7CDA7C5A-7213-494E-B88F-65D50B8C3F1E}.Debug|x86.ActiveCfg = Debug|Win32
+		{7CDA7C5A-7213-494E-B88F-65D50B8C3F1E}.Debug|x86.Build.0 = Debug|Win32
+		{7CDA7C5A-7213-494E-B88F-65D50B8C3F1E}.Release|x64.ActiveCfg = Release|x64
+		{7CDA7C5A-7213-494E-B88F-65D50B8C3F1E}.Release|x64.Build.0 = Release|x64
+		{7CDA7C5A-7213-494E-B88F-65D50B8C3F1E}.Release|x86.ActiveCfg = Release|Win32
+		{7CDA7C5A-7213-494E-B88F-65D50B8C3F1E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
