@@ -15,6 +15,8 @@ Element         NGE
 #include <stack>
 #include <unordered_map>
 
+// Method 1. Using unordered map
+/*
 void printNextGreaterElement(int arr[], int n)
 {
     std::stack<int> st;
@@ -45,7 +47,38 @@ void printNextGreaterElement(int arr[], int n)
 
     for (int i = 0; i < n; i++)
         std::cout << arr[i] << " --> " << map[arr[i]] << std::endl;
+} */
+
+// Method 2. Traversing from right to left
+void printNextGreaterElement(int arr[], int n)
+{
+    std::stack<int> st;
+    int* solnArray = new int[n];
+    for (int i = n - 1; i >= 0; i--)
+    {
+        // We will pop till we get the greater element on top or stack gets empty
+        while (!st.empty() && st.top() <= arr[i])
+        {
+            st.pop();
+        }
+        // if stack gets empty means there is no element on right which is greater than the current element.
+        // if not empty then the next greater element is on top of stack
+        if (st.empty())
+        {
+            solnArray[i] = -1;
+        }
+        else
+        {
+            solnArray[i] = st.top();
+        }
+        st.push(arr[i]);
+    }
+    for (int i = 0; i < n; i++)
+    {
+        std::cout << arr[i] << " ---> " << solnArray[i] << std::endl;
+    }
 }
+
 
 /* Driver program to test above functions */
 int main() {
