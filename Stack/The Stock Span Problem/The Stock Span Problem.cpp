@@ -10,8 +10,58 @@ then the span values for corresponding 7 days are {1, 1, 1, 2, 1, 4, 6}
 */
 
 #include <iostream>
+#include <stack>
 
+// Method 1: Brute force.......    Time complexity: O(n^2)
+/*
+void calculateSpan(int price[], int n, int S[])
+{
+    // Span value of first day is always 1
+    S[0] = 1;
+    for (int i = 1; i < n; i++)
+    {
+        S[i] = 1;
+        // Traverse left while the next element on left is smaller than price[i]
+        for (int j = i - 1; j >= 0 && price[j] <= price[i]; j--)
+        {
+            S[i]++;
+        }
+    }
+} */
+
+// Method 2. Using stack.......     Time complexity: O(n)
+void calculateSpan(int price[], int n, int span[])
+{
+    std::stack<int> st;
+    st.push(0);
+    // Span value of first day is always 1
+    span[0] = 1;
+    for (int i = 1; i < n; i++)
+    {
+        // Pop elements from stack while stack is not empty and top of stack is smaller than price[i]
+        while (!st.empty() && price[st.top()] <= price[i])
+        {
+            st.pop();
+        }
+        // If stack becomes empty, then price[i] is greater than all elements on left of it
+        // Else price[i] is greater than elements after top of stack
+        span[i] = st.empty() ? (i + 1) : (i - st.top());
+        st.push(i);
+    }
+}
+
+// Driver code
 int main()
 {
-    std::cout << "Hello World!\n";
+    int price[] = { 10, 4, 5, 90, 120, 80 };
+    int n = sizeof(price) / sizeof(price[0]);
+    int* span = new int[n];
+
+    // Fill the span values in array S[]
+    calculateSpan(price, n, span);
+
+    for (int i = 0; i < n; i++)
+        std::cout << span[i] << " ";
+
+    return 0;
 }
