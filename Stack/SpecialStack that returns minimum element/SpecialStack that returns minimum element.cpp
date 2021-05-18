@@ -86,8 +86,12 @@ int Stack::top()
     return arr[m_top];
 }
 
+// Approach 1. Use two stacks, one to store actual stack elements and the other as an auxiliary stack to store minimum values
+// Time complexity : O(1) for all operations,    Space : O(n)
+
 /* A class that supports all the stack operations and one additional operation getMin() that returns the minimum element from stack at
 any time. This class inherits from the stack class and uses an auxiliarry stack that holds minimum elements */
+/*
 class SpecialStack : public Stack 
 {
 public:
@@ -129,6 +133,108 @@ int SpecialStack::pop()
 int SpecialStack::getMin()
 {
     return m_min.top();
+}
+*/
+
+// Approach 2: Space optimized - limit the number of elements in the auxiliary stack
+// push only when the incoming element of the main stack is smaller than or equal to the top of the auxiliary stack
+// During pop, if the pop-off element equal to the top of the auxiliary stack, remove the top element of the auxiliary stack
+// Time complexity : O(1) for all operations,    Space : O(n), The complexity in the worst case is the same as above 
+// but in other cases, it will take slightly less space than the above approach as repetition is neglected.
+/*
+class SpecialStack : public Stack
+{
+public:
+    int pop();
+    void push(int x);
+    int getMin();
+
+private:
+    Stack m_min;
+};
+
+void SpecialStack::push(int x)
+{
+    if (isEmpty())
+    {
+        Stack::push(x);
+        m_min.push(x);
+    }
+    else
+    {
+        Stack::push(x);
+        int y = m_min.top();
+        // push only when the incoming element of main stack is smaller than or equal to top of auxiliary stack
+        if (x <= y)
+            m_min.push(x);
+    }
+}
+
+int SpecialStack::pop()
+{
+    int x = Stack::pop();
+    // if the pop-off element x equal to the top of the auxiliary stack, remove the top element of the auxiliary stack
+    if (x == m_min.top())
+    {
+        m_min.pop();
+    }
+    return x;
+}
+
+int SpecialStack::getMin()
+{
+    return m_min.top();
+} */
+
+// Approach 3: Further optimized O(1) time complexity and O(1) space complexity solution 
+// While pushing an element ‘e’ into the stack, store it as (e * DUMMY_VALUE + minFoundSoFar), this way we know what was the 
+// minimum value present in the stack at the time ‘e’ was being inserted.
+// To pop the actual value just return e / DUMMY_VALUE and set the new minimum as (minFoundSoFar % DUMMY_VALUE)
+class SpecialStack : public Stack
+{
+public:
+    int pop();
+    void push(int x);
+    int getMin();
+    int peek();
+
+private:
+    int min = -1;
+    static const int DUMMY_VALUE = 99999;
+};
+
+int SpecialStack::getMin()
+{
+    return min;
+}
+
+void SpecialStack::push(int x)
+{
+    if (isEmpty() || x < min)
+    {
+        min = x;
+    }
+    Stack::push(x * DUMMY_VALUE + min);
+}
+
+int SpecialStack::pop()
+{
+    int x = Stack::pop();
+
+    if (!isEmpty())
+    {
+        min = Stack::top() % DUMMY_VALUE;
+    }
+    else
+    {
+        min = -1;
+    }
+    return x / DUMMY_VALUE;
+}
+
+int SpecialStack::peek()
+{
+    return Stack::top() / DUMMY_VALUE;
 }
 
 int main()
