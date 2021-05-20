@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpecialStack that returns m
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Implement Stack using Queues", "Implement Stack using Queues\Implement Stack using Queues.vcxproj", "{17E16393-E061-4BE6-8B6D-F70CFE739262}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Design a stack with operations on middle element", "Design a stack with operations on middle element\Design a stack with operations on middle element.vcxproj", "{A97565B8-A020-4C99-9A16-FEA0B5314574}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{17E16393-E061-4BE6-8B6D-F70CFE739262}.Release|x64.Build.0 = Release|x64
 		{17E16393-E061-4BE6-8B6D-F70CFE739262}.Release|x86.ActiveCfg = Release|Win32
 		{17E16393-E061-4BE6-8B6D-F70CFE739262}.Release|x86.Build.0 = Release|Win32
+		{A97565B8-A020-4C99-9A16-FEA0B5314574}.Debug|x64.ActiveCfg = Debug|x64
+		{A97565B8-A020-4C99-9A16-FEA0B5314574}.Debug|x64.Build.0 = Debug|x64
+		{A97565B8-A020-4C99-9A16-FEA0B5314574}.Debug|x86.ActiveCfg = Debug|Win32
+		{A97565B8-A020-4C99-9A16-FEA0B5314574}.Debug|x86.Build.0 = Debug|Win32
+		{A97565B8-A020-4C99-9A16-FEA0B5314574}.Release|x64.ActiveCfg = Release|x64
+		{A97565B8-A020-4C99-9A16-FEA0B5314574}.Release|x64.Build.0 = Release|x64
+		{A97565B8-A020-4C99-9A16-FEA0B5314574}.Release|x86.ActiveCfg = Release|Win32
+		{A97565B8-A020-4C99-9A16-FEA0B5314574}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
