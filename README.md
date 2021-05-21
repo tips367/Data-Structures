@@ -9,6 +9,7 @@ All the source code are structured properly and placed topicwise in folders.
 <li>Arrays</li>
 <li>Linked List</li>
 <li>Stack</li>
+<li>Queue</li>
 </ul>
 
 <h2>Features</h2>
