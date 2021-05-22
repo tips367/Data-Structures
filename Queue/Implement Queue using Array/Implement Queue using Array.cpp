@@ -3,18 +3,130 @@
 
 #include <iostream>
 
-int main()
+class Queue
 {
-    std::cout << "Hello World!\n";
+public:
+    Queue(int capacity);
+    bool isFull();
+    bool isEmpty();
+    void enqueue(int item);
+    int dequeue();
+    int front();
+    int rear();
+    void display();
+    
+private:
+    int* m_array;
+    int m_front, m_rear, m_capacity;
+};
+
+Queue::Queue(int capacity) : m_front(-1), m_rear(-1)
+{
+    m_capacity = capacity;
+    m_array = new int[capacity];
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+bool Queue::isEmpty()
+{
+    return (m_front == -1 && m_rear == -1);
+}
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+bool Queue::isFull()
+{
+    return ((m_rear + 1) % m_capacity == m_front);
+}
+
+void Queue::enqueue(int item)
+{
+    if (isEmpty())
+    {
+        m_front = m_rear = 0;
+        m_array[m_rear] = item;
+    }
+    else if (isFull())
+    {
+        std::cout << "Queue is full\n";
+        return;
+    }
+    else
+    {
+        m_rear = (m_rear + 1) % m_capacity;
+        m_array[m_rear] = item;
+    }
+}
+
+int Queue::dequeue()
+{
+    int temp = m_array[m_front];
+    if (isEmpty())
+    {
+        std::cout << "Queue is empty\n";
+        return INT_MIN;
+    }
+    else if (m_front == m_rear)
+    {
+        m_front = m_rear = -1;
+    }
+    else
+    {
+        m_front = (m_front + 1) % m_capacity;
+    }
+    return temp;
+}
+
+int Queue::front()
+{
+    if (isEmpty())
+    {
+        std::cout << "Queue is empty\n";
+        return INT_MIN;
+    }
+    return m_array[m_front];
+}
+
+int Queue::rear()
+{
+    if (isEmpty())
+    {
+        std::cout << "Queue is empty\n";
+        return INT_MIN;
+    }
+    return m_array[m_rear];
+}
+
+void Queue::display()
+{
+    if (isEmpty())
+    {
+        std::cout << "Queue is empty\n";
+        return;
+    }
+
+    int i = m_front;
+    std::cout << "Queue is: ";
+    while (i != m_rear)
+    {
+        std::cout << m_array[i] << " ";
+        i = (i + 1) % m_capacity;
+    }
+    std::cout << m_array[m_rear];
+}
+
+// Driver code
+int main()
+{
+    Queue queue(100);
+
+    queue.enqueue(10);
+    queue.enqueue(20);
+    queue.enqueue(30);
+    queue.enqueue(40);
+
+    std::cout << queue.dequeue() << " dequeued from queue\n";
+
+    std::cout << "Front item is " << queue.front() << std::endl;
+    std::cout << "Rear item is " << queue.rear() << std::endl;
+
+    return 0;
+}
+
