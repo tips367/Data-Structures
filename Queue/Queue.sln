@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Implement Queue using Array", "Implement Queue using Array\Implement Queue using Array.vcxproj", "{9DDD6901-1B6E-407D-B4C8-5F5A5E2F13E2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Implement Queue using Linked List", "Implement Queue using Linked List\Implement Queue using Linked List.vcxproj", "{62E1E22C-5C56-4FD0-ADF5-58C19103778F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{9DDD6901-1B6E-407D-B4C8-5F5A5E2F13E2}.Release|x64.Build.0 = Release|x64
 		{9DDD6901-1B6E-407D-B4C8-5F5A5E2F13E2}.Release|x86.ActiveCfg = Release|Win32
 		{9DDD6901-1B6E-407D-B4C8-5F5A5E2F13E2}.Release|x86.Build.0 = Release|Win32
+		{62E1E22C-5C56-4FD0-ADF5-58C19103778F}.Debug|x64.ActiveCfg = Debug|x64
+		{62E1E22C-5C56-4FD0-ADF5-58C19103778F}.Debug|x64.Build.0 = Debug|x64
+		{62E1E22C-5C56-4FD0-ADF5-58C19103778F}.Debug|x86.ActiveCfg = Debug|Win32
+		{62E1E22C-5C56-4FD0-ADF5-58C19103778F}.Debug|x86.Build.0 = Debug|Win32
+		{62E1E22C-5C56-4FD0-ADF5-58C19103778F}.Release|x64.ActiveCfg = Release|x64
+		{62E1E22C-5C56-4FD0-ADF5-58C19103778F}.Release|x64.Build.0 = Release|x64
+		{62E1E22C-5C56-4FD0-ADF5-58C19103778F}.Release|x86.ActiveCfg = Release|Win32
+		{62E1E22C-5C56-4FD0-ADF5-58C19103778F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

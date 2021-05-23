@@ -1,77 +1,74 @@
-// Implement Queue using Array.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Implement Queue using Linked List.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
 
+struct QNode 
+{
+    int data;
+    QNode* next;
+    QNode(int d)
+    {
+        data = d;
+        next = NULL;
+    }
+};
+
 class Queue
 {
+private:
+    QNode* m_pFront, * m_pRear;
+
 public:
-    Queue(int capacity);
-    bool isFull();
+    Queue() : m_pFront(NULL), m_pRear(NULL) {}
     bool isEmpty();
     void enqueue(int item);
     int dequeue();
     int front();
     int rear();
     void display();
-    
-private:
-    int* m_array;
-    int m_front, m_rear, m_capacity;
 };
-
-Queue::Queue(int capacity) : m_front(-1), m_rear(-1)
-{
-    m_capacity = capacity;
-    m_array = new int[capacity];
-}
 
 bool Queue::isEmpty()
 {
-    return (m_front == -1 && m_rear == -1);
-}
-
-bool Queue::isFull()
-{
-    return ((m_rear + 1) % m_capacity == m_front);
+    return (m_pFront == NULL && m_pRear == NULL);
 }
 
 void Queue::enqueue(int item)
 {
+    // Create a new LL node
+    QNode* newNode = new QNode(item);
+
     if (isEmpty())
     {
-        m_front = m_rear = 0;
-        m_array[m_rear] = item;
-    }
-    else if (isFull())
-    {
-        std::cout << "Queue is full\n";
-        return;
+        m_pFront = m_pRear = newNode;
     }
     else
     {
-        m_rear = (m_rear + 1) % m_capacity;
-        m_array[m_rear] = item;
+        m_pRear->next = newNode;
+        m_pRear = newNode;
     }
 }
 
 int Queue::dequeue()
 {
-    int temp = m_array[m_front];
     if (isEmpty())
     {
         std::cout << "Queue is empty\n";
         return INT_MIN;
     }
-    else if (m_front == m_rear) // Only one item present in queue
+
+    QNode* temp = m_pFront;
+    int item = m_pFront->data;
+    m_pFront = m_pFront->next;
+
+    // If front becomes NULL, then change rear also as NULL
+    if (m_pFront == NULL)
     {
-        m_front = m_rear = -1;
+        m_pRear = NULL;
     }
-    else
-    {
-        m_front = (m_front + 1) % m_capacity;
-    }
-    return temp;
+    delete temp;
+    return item;
 }
 
 int Queue::front()
@@ -81,7 +78,7 @@ int Queue::front()
         std::cout << "Queue is empty\n";
         return INT_MIN;
     }
-    return m_array[m_front];
+    return m_pFront->data;
 }
 
 int Queue::rear()
@@ -91,7 +88,7 @@ int Queue::rear()
         std::cout << "Queue is empty\n";
         return INT_MIN;
     }
-    return m_array[m_rear];
+    return m_pRear->data;
 }
 
 void Queue::display()
@@ -102,20 +99,20 @@ void Queue::display()
         return;
     }
 
-    int i = m_front;
+    QNode* temp = m_pFront;
     std::cout << "Queue is: ";
-    while (i != m_rear)
+    while (temp != NULL)
     {
-        std::cout << m_array[i] << " ";
-        i = (i + 1) % m_capacity;
+        std::cout << temp->data << " ";
+        temp = temp->next;
     }
-    std::cout << m_array[m_rear] << std::endl;
+    std::cout << "\n";
 }
 
 // Driver code
 int main()
 {
-    Queue queue(5);
+    Queue queue;
 
     queue.enqueue(10);
     queue.enqueue(20);
@@ -126,7 +123,7 @@ int main()
 
     queue.display();
     std::cout << queue.dequeue() << " dequeued from queue\n";
-    queue.enqueue(60);
+    std::cout << queue.dequeue() << " dequeued from queue\n";
     queue.display();
 
     std::cout << "Front item is " << queue.front() << std::endl;
@@ -134,4 +131,5 @@ int main()
 
     return 0;
 }
+
 
