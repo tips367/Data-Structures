@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Find the first circular tou
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Maximum of all subarrays of size k", "Maximum of all subarrays of size k\Maximum of all subarrays of size k.vcxproj", "{5ECAED16-416B-419B-90B3-000944E97D70}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Generate Binary Numbers from 1 to n", "Generate Binary Numbers from 1 to n\Generate Binary Numbers from 1 to n.vcxproj", "{CEA3D9C8-8664-4C80-ADCD-6F847612B5E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{5ECAED16-416B-419B-90B3-000944E97D70}.Release|x64.Build.0 = Release|x64
 		{5ECAED16-416B-419B-90B3-000944E97D70}.Release|x86.ActiveCfg = Release|Win32
 		{5ECAED16-416B-419B-90B3-000944E97D70}.Release|x86.Build.0 = Release|Win32
+		{CEA3D9C8-8664-4C80-ADCD-6F847612B5E9}.Debug|x64.ActiveCfg = Debug|x64
+		{CEA3D9C8-8664-4C80-ADCD-6F847612B5E9}.Debug|x64.Build.0 = Debug|x64
+		{CEA3D9C8-8664-4C80-ADCD-6F847612B5E9}.Debug|x86.ActiveCfg = Debug|Win32
+		{CEA3D9C8-8664-4C80-ADCD-6F847612B5E9}.Debug|x86.Build.0 = Debug|Win32
+		{CEA3D9C8-8664-4C80-ADCD-6F847612B5E9}.Release|x64.ActiveCfg = Release|x64
+		{CEA3D9C8-8664-4C80-ADCD-6F847612B5E9}.Release|x64.Build.0 = Release|x64
+		{CEA3D9C8-8664-4C80-ADCD-6F847612B5E9}.Release|x86.ActiveCfg = Release|Win32
+		{CEA3D9C8-8664-4C80-ADCD-6F847612B5E9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
