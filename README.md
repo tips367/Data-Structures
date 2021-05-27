@@ -10,6 +10,7 @@ All the source code are structured properly and placed topicwise in folders.
 <li>Linked List</li>
 <li>Stack</li>
 <li>Queue</li>
+<li>Binary Tree</li>
 </ul>
 
 <h2>Features</h2>
