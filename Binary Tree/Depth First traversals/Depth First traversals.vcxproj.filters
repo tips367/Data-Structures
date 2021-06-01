@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Introduction.cpp">
+    <ClCompile Include="Depth First traversals.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
