@@ -30,6 +30,8 @@ public:
     }
 };
 
+// Method 1. Time complexity : O(n^2) 
+/*
 int getHeight(Node* node)
 {
     if (node == NULL)
@@ -57,6 +59,31 @@ int diameter(Node* node)
     // 2) Diameter of right subtree
     // 3) Height of left subtree + height of right subtree + 1
     return std::max(leftHeight + rightHeight + 1, std::max(leftDiameter, rightDiameter));
+} */
+
+// Method 2. Optimized......Time complexity : O(n)
+int getHeight(Node* node, int& result)
+{
+    if (node == NULL)
+        return 0;
+
+    int leftHeight = getHeight(node->left, result);
+    int rightHeight = getHeight(node->right, result);
+
+    // update the answer, because diameter of a tree is nothing but maximum value of
+    // (left_height + right_height + 1) for each node
+    result = std::max(result, 1 + leftHeight + rightHeight);
+
+    return 1 + std::max(leftHeight, rightHeight);
+}
+
+int diameter(Node* root)
+{
+    if (root == NULL)
+        return 0;
+    int result = INT_MIN; 
+    getHeight(root, result);
+    return result;
 }
 
 int main()
