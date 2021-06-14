@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Breadth First traversal", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Diameter of a Binary Tree", "Diameter of a Binary Tree\Diameter of a Binary Tree.vcxproj", "{DD13D540-B02C-4924-A74A-4A3192F8A0D1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Inorder Tree Traversal without Recursion", "Inorder Tree Traversal without Recursion\Inorder Tree Traversal without Recursion.vcxproj", "{581B55AC-7D75-4041-BAEF-054677802460}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{DD13D540-B02C-4924-A74A-4A3192F8A0D1}.Release|x64.Build.0 = Release|x64
 		{DD13D540-B02C-4924-A74A-4A3192F8A0D1}.Release|x86.ActiveCfg = Release|Win32
 		{DD13D540-B02C-4924-A74A-4A3192F8A0D1}.Release|x86.Build.0 = Release|Win32
+		{581B55AC-7D75-4041-BAEF-054677802460}.Debug|x64.ActiveCfg = Debug|x64
+		{581B55AC-7D75-4041-BAEF-054677802460}.Debug|x64.Build.0 = Debug|x64
+		{581B55AC-7D75-4041-BAEF-054677802460}.Debug|x86.ActiveCfg = Debug|Win32
+		{581B55AC-7D75-4041-BAEF-054677802460}.Debug|x86.Build.0 = Debug|Win32
+		{581B55AC-7D75-4041-BAEF-054677802460}.Release|x64.ActiveCfg = Release|x64
+		{581B55AC-7D75-4041-BAEF-054677802460}.Release|x64.Build.0 = Release|x64
+		{581B55AC-7D75-4041-BAEF-054677802460}.Release|x86.ActiveCfg = Release|Win32
+		{581B55AC-7D75-4041-BAEF-054677802460}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
