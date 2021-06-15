@@ -1,4 +1,4 @@
-/* Inorder Tree Traversal without Recursion.cpp
+/* Inorder Tree Traversal without Recursion
 
                        1
                      /   \
