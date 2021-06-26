@@ -26,6 +26,8 @@ Node* newNode(int data)
     return temp;
 }
 
+// Method 1: Using Hashing
+/*
 Node* copyLeftRightNode(Node* treeNode, std::unordered_map<Node*, Node*>& map)
 {
     if (treeNode == NULL)
@@ -37,13 +39,13 @@ Node* copyLeftRightNode(Node* treeNode, std::unordered_map<Node*, Node*>& map)
     return cloneNode;
 }
 
-void copyRandom(Node* treeNode, Node* cloneNode, std::unordered_map<Node*, Node*>& map)
+void connectRandomNodes(Node* treeNode, Node* cloneNode, std::unordered_map<Node*, Node*>& map)
 {
     if (cloneNode == NULL)
         return;
     cloneNode->random = map[treeNode->random];
-    copyRandom(treeNode->left, cloneNode->left, map);
-    copyRandom(treeNode->right, cloneNode->right, map);
+    connectRandomNodes(treeNode->left, cloneNode->left, map);
+    connectRandomNodes(treeNode->right, cloneNode->right, map);
 }
 
 Node* cloneTree(Node* root)
@@ -52,8 +54,68 @@ Node* cloneTree(Node* root)
         return NULL;
     std::unordered_map<Node*, Node*> map;
     Node* newTree = copyLeftRightNode(root, map);
-    copyRandom(root, newTree, map);
+    connectRandomNodes(root, newTree, map);
     return newTree;
+}
+*/
+
+// Method 2: Temporarily Modifying the Given Binary Tree
+
+Node* copyLeftRightNode(Node* treeNode)
+{
+    if (treeNode == NULL)
+        return NULL;
+
+    Node* left = treeNode->left;
+    // insert cloned node in between current node and it's left child
+    treeNode->left = newNode(treeNode->data);
+    treeNode->left->left = left;
+    if (left != NULL)
+        left->left = copyLeftRightNode(left);
+
+    treeNode->left->right = copyLeftRightNode(treeNode->right);
+    return treeNode->left;
+}
+
+void connectRandomNodes(Node* treeNode, Node* cloneNode)
+{
+    if (treeNode == NULL)
+        return;
+    if (treeNode->random != NULL)
+        cloneNode->random = treeNode->random->left;
+    else
+        cloneNode->random = NULL;
+
+    if (treeNode->left != NULL && cloneNode->left != NULL)
+        connectRandomNodes(treeNode->left->left, cloneNode->left->left);
+    connectRandomNodes(treeNode->right, cloneNode->right);
+}
+
+void restoreTreeLeftNode(Node* treeNode, Node* cloneNode)
+{
+    if (treeNode == NULL)
+        return;
+    if (cloneNode->left != NULL)
+    {
+        Node* leftptr = cloneNode->left->left;
+        treeNode->left = treeNode->left->left;
+        cloneNode->left = leftptr;
+    }
+    else
+        treeNode->left = NULL;
+
+    restoreTreeLeftNode(treeNode->left, cloneNode->left);
+    restoreTreeLeftNode(treeNode->right, cloneNode->right);
+}
+
+Node* cloneTree(Node* treeNode)
+{
+    if (treeNode == NULL)
+        return NULL;
+    Node* cloneNode = copyLeftRightNode(treeNode);
+    connectRandomNodes(treeNode, cloneNode);
+    restoreTreeLeftNode(treeNode, cloneNode);
+    return cloneNode;
 }
 
 void printInorder(Node* node)
