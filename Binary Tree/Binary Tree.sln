@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Construct Tree from given I
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Maximum width of a binary tree", "Maximum width of a binary tree\Maximum width of a binary tree.vcxproj", "{554A28C1-0B53-4F86-9EF9-9CE0DFBDBF29}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Print nodes at k distance from root", "Print nodes at k distance from root\Print nodes at k distance from root.vcxproj", "{0A14160E-B725-4161-82B1-BAF7DED29F13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{554A28C1-0B53-4F86-9EF9-9CE0DFBDBF29}.Release|x64.Build.0 = Release|x64
 		{554A28C1-0B53-4F86-9EF9-9CE0DFBDBF29}.Release|x86.ActiveCfg = Release|Win32
 		{554A28C1-0B53-4F86-9EF9-9CE0DFBDBF29}.Release|x86.Build.0 = Release|Win32
+		{0A14160E-B725-4161-82B1-BAF7DED29F13}.Debug|x64.ActiveCfg = Debug|x64
+		{0A14160E-B725-4161-82B1-BAF7DED29F13}.Debug|x64.Build.0 = Debug|x64
+		{0A14160E-B725-4161-82B1-BAF7DED29F13}.Debug|x86.ActiveCfg = Debug|Win32
+		{0A14160E-B725-4161-82B1-BAF7DED29F13}.Debug|x86.Build.0 = Debug|Win32
+		{0A14160E-B725-4161-82B1-BAF7DED29F13}.Release|x64.ActiveCfg = Release|x64
+		{0A14160E-B725-4161-82B1-BAF7DED29F13}.Release|x64.Build.0 = Release|x64
+		{0A14160E-B725-4161-82B1-BAF7DED29F13}.Release|x86.ActiveCfg = Release|Win32
+		{0A14160E-B725-4161-82B1-BAF7DED29F13}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
