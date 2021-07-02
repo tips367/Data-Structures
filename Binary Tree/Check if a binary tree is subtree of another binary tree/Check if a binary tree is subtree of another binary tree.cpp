@@ -25,6 +25,7 @@ For example, in the following case, tree S is a subtree of tree T.
 */
 
 #include <iostream>
+#define MAX 500
 
 class Node
 {
@@ -38,6 +39,8 @@ public:
     }
 };
 
+// Method 1: Time complexity - O(mn) where m and n are number of nodes in given two trees
+/*
 bool isSameTree(Node* T, Node* S)
 {
     if (T == NULL || S == NULL)
@@ -45,6 +48,7 @@ bool isSameTree(Node* T, Node* S)
         return (T == NULL && S == NULL);
     }
 
+    // Check if the data of both roots is same and data of left and right subtrees are also same
     if (T->data == S->data)
     {
         return isSameTree(T->left, S->left) && isSameTree(T->right, S->right);
@@ -61,10 +65,69 @@ bool isSubtree(Node* T, Node* S)
         return true;
     if (T == NULL)
         return false;
+
+    // Check the tree with root as current node
     if (isSameTree(T, S))
         return true;
     else
+        // If the tree with root as current node doesn't match then try left and right subtrees one by one
         return (isSubtree(T->left, S) || isSubtree(T->right, S));
+} */
+
+// Method 2: Optimized....Time complexity - O(n)
+void storeInOrder(Node* root, char arr[], int& i)
+{
+    if (root == NULL) 
+    {
+        // adding special character to handle cases where a tree is present in another tree, but not as a subtree
+        arr[i++] = '$';
+        return;
+    }
+    storeInOrder(root->left, arr, i);
+    arr[i++] = root->data;
+    storeInOrder(root->right, arr, i);
+}
+
+void storePreOrder(Node* root, char arr[], int& i)
+{
+    if (root == NULL) 
+    {
+        arr[i++] = '$';
+        return;
+    }
+    arr[i++] = root->data;
+    storePreOrder(root->left, arr, i);
+    storePreOrder(root->right, arr, i);
+}
+
+bool isSubtree(Node* T, Node* S)
+{
+    if (S == NULL)
+        return true;
+    if (T == NULL)
+        return false;
+
+    // Store inorder traversals of T and S in inOrderT[0..m-1] and inOrderS[0..n-1] respectively
+    char inOrderT[MAX], inOrderS[MAX];
+    int m = 0, n = 0;
+    storeInOrder(T, inOrderT, m);
+    storeInOrder(S, inOrderS, n);
+    inOrderT[m] = '\0';
+    inOrderS[n] = '\0';
+
+    // If inOrderS[] is not a substring of inOrderT[], return false
+    if (strstr(inOrderT, inOrderS) == NULL)
+        return false;
+
+    // Store preorder traversals of T and S in preOrderT[0..m-1] and preOrderS[0..n-1] respectively
+    char preOrderT[MAX], preOrderS[MAX];
+    m = 0, n = 0;
+    storePreOrder(T, preOrderT, m);
+    storePreOrder(S, preOrderS, n);
+    preOrderT[m] = '\0';
+    preOrderS[n] = '\0';
+
+    return (strstr(preOrderT, preOrderS) != NULL);
 }
 
 int main()
@@ -82,7 +145,6 @@ int main()
     */
 
     Node* T = new Node(26);
-
     T->right = new Node(3);
     T->right->right = new Node(3);
     T->left = new Node(10);
