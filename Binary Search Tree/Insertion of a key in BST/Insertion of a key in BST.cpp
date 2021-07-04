@@ -15,6 +15,8 @@ public:
     }
 };
 
+// Method 1. Recursive
+/*
 Node* insert(Node* root, int value)
 {
     if (root == NULL)
@@ -34,6 +36,34 @@ Node* insert(Node* root, int value)
 
     // Return root node, after insertion.
     return root;
+} */
+
+// Method 2: Iterative
+Node* insert(Node* root, int value)
+{
+    Node* node = new Node(value);
+    if (root == NULL)
+    {
+        return node;
+    }
+    Node* prev = NULL;
+    while (root != NULL)
+    {
+        if (root->data > value)
+        {
+            prev = root;
+            root = root->left;
+        }
+        else if (root->data < value)
+        {
+            prev = root;
+            root = root->right;
+        }
+    }
+    if (prev->data > value)
+        prev->left = node;
+    else
+        prev->right = node;
 }
 
 // Utility function to test built tree
