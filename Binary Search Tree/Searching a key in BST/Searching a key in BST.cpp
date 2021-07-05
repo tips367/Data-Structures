@@ -1,5 +1,4 @@
-// Searching a key in BST.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// Searching a key in BST
 
 #include <iostream>
 
