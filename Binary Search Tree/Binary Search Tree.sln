@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Deletion from BST", "Deleti
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Node with minimum value in a BST", "Node with minimum value in a BST\Node with minimum value in a BST.vcxproj", "{D685DD50-CCC9-413D-9177-87E97EC8C45F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Inorder predecessor and successor for a key in BST", "Inorder predecessor and successor for a key in BST\Inorder predecessor and successor for a key in BST.vcxproj", "{9075FAAE-7752-42EB-BA35-7037CB01E22A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{D685DD50-CCC9-413D-9177-87E97EC8C45F}.Release|x64.Build.0 = Release|x64
 		{D685DD50-CCC9-413D-9177-87E97EC8C45F}.Release|x86.ActiveCfg = Release|Win32
 		{D685DD50-CCC9-413D-9177-87E97EC8C45F}.Release|x86.Build.0 = Release|Win32
+		{9075FAAE-7752-42EB-BA35-7037CB01E22A}.Debug|x64.ActiveCfg = Debug|x64
+		{9075FAAE-7752-42EB-BA35-7037CB01E22A}.Debug|x64.Build.0 = Debug|x64
+		{9075FAAE-7752-42EB-BA35-7037CB01E22A}.Debug|x86.ActiveCfg = Debug|Win32
+		{9075FAAE-7752-42EB-BA35-7037CB01E22A}.Debug|x86.Build.0 = Debug|Win32
+		{9075FAAE-7752-42EB-BA35-7037CB01E22A}.Release|x64.ActiveCfg = Release|x64
+		{9075FAAE-7752-42EB-BA35-7037CB01E22A}.Release|x64.Build.0 = Release|x64
+		{9075FAAE-7752-42EB-BA35-7037CB01E22A}.Release|x86.ActiveCfg = Release|Win32
+		{9075FAAE-7752-42EB-BA35-7037CB01E22A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
