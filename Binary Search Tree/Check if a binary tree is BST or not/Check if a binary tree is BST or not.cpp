@@ -65,6 +65,7 @@ bool isBinarySearchTree(Node* root)
 } */
 
 // Method 2: Efficient.....Time complexity : O(n)
+/*
 bool isBinarySearchTreeUtil(Node* root, int minValue, int maxValue)
 {
     if (root == NULL)
@@ -85,6 +86,30 @@ bool isBinarySearchTreeUtil(Node* root, int minValue, int maxValue)
 bool isBinarySearchTree(Node* root)
 {
     return isBinarySearchTreeUtil(root, INT_MIN, INT_MAX);
+} */
+
+// Method 3: In Order traversal.....Time complexity : O(n)
+bool isBinarySearchTreeUtil(Node* root, Node*& prev)
+{
+    if (root == NULL)
+        return true;
+
+    if (!isBinarySearchTreeUtil(root->left, prev))
+        return false;
+
+    // Allows only distinct valued nodes 
+    if (prev != NULL && root->data <= prev->data)
+        return false;
+
+    prev = root;
+
+    return isBinarySearchTreeUtil(root->right, prev);
+}
+
+bool isBinarySearchTree(Node* root)
+{
+    Node* prev = NULL;
+    return isBinarySearchTreeUtil(root, prev);
 }
 
 int main()
