@@ -103,7 +103,7 @@ void merge(Node* root1, Node* root2)
                 {
                     current2 = st2.top();
                     st2.pop();
-                    current2->left = NULL;
+                    current2->left = NULL; //Since the left part is already processed so far, We don't want to process again in printInOrder(current2)
                     printInOrder(current2);
                 }
                 return;
@@ -126,7 +126,7 @@ void merge(Node* root1, Node* root2)
             current2 = st2.top();
             st2.pop();
 
-            // If element of first tree is smaller, then print it and push the right subtree.
+            // If element of first tree is smaller, then print it
             if (current1->data < current2->data)
             {
                 std::cout << current1->data << " ";
