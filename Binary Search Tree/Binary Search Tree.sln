@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Inorder Successor in Binary
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Find k-th smallest element in BST", "Find k-th smallest element in BST\Find k-th smallest element in BST.vcxproj", "{B8F823D4-5FF6-4AB1-B421-1BBD663AB7EF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Merge two BSTs with limited extra space", "Merge two BSTs with limited extra space\Merge two BSTs with limited extra space.vcxproj", "{5B48613E-0B48-4AA6-8C1A-A71FAD4A68CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{B8F823D4-5FF6-4AB1-B421-1BBD663AB7EF}.Release|x64.Build.0 = Release|x64
 		{B8F823D4-5FF6-4AB1-B421-1BBD663AB7EF}.Release|x86.ActiveCfg = Release|Win32
 		{B8F823D4-5FF6-4AB1-B421-1BBD663AB7EF}.Release|x86.Build.0 = Release|Win32
+		{5B48613E-0B48-4AA6-8C1A-A71FAD4A68CF}.Debug|x64.ActiveCfg = Debug|x64
+		{5B48613E-0B48-4AA6-8C1A-A71FAD4A68CF}.Debug|x64.Build.0 = Debug|x64
+		{5B48613E-0B48-4AA6-8C1A-A71FAD4A68CF}.Debug|x86.ActiveCfg = Debug|Win32
+		{5B48613E-0B48-4AA6-8C1A-A71FAD4A68CF}.Debug|x86.Build.0 = Debug|Win32
+		{5B48613E-0B48-4AA6-8C1A-A71FAD4A68CF}.Release|x64.ActiveCfg = Release|x64
+		{5B48613E-0B48-4AA6-8C1A-A71FAD4A68CF}.Release|x64.Build.0 = Release|x64
+		{5B48613E-0B48-4AA6-8C1A-A71FAD4A68CF}.Release|x86.ActiveCfg = Release|Win32
+		{5B48613E-0B48-4AA6-8C1A-A71FAD4A68CF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
