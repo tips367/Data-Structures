@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Find k-th smallest element 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Merge two BSTs with limited extra space", "Merge two BSTs with limited extra space\Merge two BSTs with limited extra space.vcxproj", "{5B48613E-0B48-4AA6-8C1A-A71FAD4A68CF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Two nodes of a BST are swapped, correct the BST", "Two nodes of a BST are swapped, correct the BST\Two nodes of a BST are swapped, correct the BST.vcxproj", "{F4618F2A-E2E0-4F5F-9E27-E610D1CF5002}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{5B48613E-0B48-4AA6-8C1A-A71FAD4A68CF}.Release|x64.Build.0 = Release|x64
 		{5B48613E-0B48-4AA6-8C1A-A71FAD4A68CF}.Release|x86.ActiveCfg = Release|Win32
 		{5B48613E-0B48-4AA6-8C1A-A71FAD4A68CF}.Release|x86.Build.0 = Release|Win32
+		{F4618F2A-E2E0-4F5F-9E27-E610D1CF5002}.Debug|x64.ActiveCfg = Debug|x64
+		{F4618F2A-E2E0-4F5F-9E27-E610D1CF5002}.Debug|x64.Build.0 = Debug|x64
+		{F4618F2A-E2E0-4F5F-9E27-E610D1CF5002}.Debug|x86.ActiveCfg = Debug|Win32
+		{F4618F2A-E2E0-4F5F-9E27-E610D1CF5002}.Debug|x86.Build.0 = Debug|Win32
+		{F4618F2A-E2E0-4F5F-9E27-E610D1CF5002}.Release|x64.ActiveCfg = Release|x64
+		{F4618F2A-E2E0-4F5F-9E27-E610D1CF5002}.Release|x64.Build.0 = Release|x64
+		{F4618F2A-E2E0-4F5F-9E27-E610D1CF5002}.Release|x86.ActiveCfg = Release|Win32
+		{F4618F2A-E2E0-4F5F-9E27-E610D1CF5002}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
