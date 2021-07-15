@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Two nodes of a BST are swap
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Floor and Ceil from a BST", "Floor and Ceil from a BST\Floor and Ceil from a BST.vcxproj", "{E7968ED4-EF25-4043-8884-3F222F9E9F54}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "In-place conversion of Sorted DLL to Balanced BST", "In-place conversion of Sorted DLL to Balanced BST\In-place conversion of Sorted DLL to Balanced BST.vcxproj", "{55589B19-403D-44F3-A5CC-36A80B79EDF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{E7968ED4-EF25-4043-8884-3F222F9E9F54}.Release|x64.Build.0 = Release|x64
 		{E7968ED4-EF25-4043-8884-3F222F9E9F54}.Release|x86.ActiveCfg = Release|Win32
 		{E7968ED4-EF25-4043-8884-3F222F9E9F54}.Release|x86.Build.0 = Release|Win32
+		{55589B19-403D-44F3-A5CC-36A80B79EDF7}.Debug|x64.ActiveCfg = Debug|x64
+		{55589B19-403D-44F3-A5CC-36A80B79EDF7}.Debug|x64.Build.0 = Debug|x64
+		{55589B19-403D-44F3-A5CC-36A80B79EDF7}.Debug|x86.ActiveCfg = Debug|Win32
+		{55589B19-403D-44F3-A5CC-36A80B79EDF7}.Debug|x86.Build.0 = Debug|Win32
+		{55589B19-403D-44F3-A5CC-36A80B79EDF7}.Release|x64.ActiveCfg = Release|x64
+		{55589B19-403D-44F3-A5CC-36A80B79EDF7}.Release|x64.Build.0 = Release|x64
+		{55589B19-403D-44F3-A5CC-36A80B79EDF7}.Release|x86.ActiveCfg = Release|Win32
+		{55589B19-403D-44F3-A5CC-36A80B79EDF7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
