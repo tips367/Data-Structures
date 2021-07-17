@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "In-place conversion of Sort
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Find a pair with given sum in a Balanced BST", "Find a pair with given sum in a Balanced BST\Find a pair with given sum in a Balanced BST.vcxproj", "{C3BFD298-E6E7-4D91-871A-5C955C7BF39E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Merge Two Balanced Binary Search Trees", "Merge Two Balanced Binary Search Trees\Merge Two Balanced Binary Search Trees.vcxproj", "{0C7A0F28-BFCF-4AF0-925C-1191B0711C3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{C3BFD298-E6E7-4D91-871A-5C955C7BF39E}.Release|x64.Build.0 = Release|x64
 		{C3BFD298-E6E7-4D91-871A-5C955C7BF39E}.Release|x86.ActiveCfg = Release|Win32
 		{C3BFD298-E6E7-4D91-871A-5C955C7BF39E}.Release|x86.Build.0 = Release|Win32
+		{0C7A0F28-BFCF-4AF0-925C-1191B0711C3B}.Debug|x64.ActiveCfg = Debug|x64
+		{0C7A0F28-BFCF-4AF0-925C-1191B0711C3B}.Debug|x64.Build.0 = Debug|x64
+		{0C7A0F28-BFCF-4AF0-925C-1191B0711C3B}.Debug|x86.ActiveCfg = Debug|Win32
+		{0C7A0F28-BFCF-4AF0-925C-1191B0711C3B}.Debug|x86.Build.0 = Debug|Win32
+		{0C7A0F28-BFCF-4AF0-925C-1191B0711C3B}.Release|x64.ActiveCfg = Release|x64
+		{0C7A0F28-BFCF-4AF0-925C-1191B0711C3B}.Release|x64.Build.0 = Release|x64
+		{0C7A0F28-BFCF-4AF0-925C-1191B0711C3B}.Release|x86.ActiveCfg = Release|Win32
+		{0C7A0F28-BFCF-4AF0-925C-1191B0711C3B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
