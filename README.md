@@ -12,6 +12,7 @@ All the source code are structured properly and placed topicwise in folders.
 <li>Queue</li>
 <li>Binary Tree</li>
 <li>Binary Search Tree</li>
+<li>Heap</li>
 </ul>
 
 <h2>Features</h2>
