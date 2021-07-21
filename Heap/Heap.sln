@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Heap Sort", "Heap Sort\Heap
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "k largest elements in an array", "k largest elements in an array\k largest elements in an array.vcxproj", "{048ABD73-DF02-427A-951D-45BD9F8AE0A4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sort a nearly sorted (or K sorted) array", "Sort a nearly sorted (or K sorted) array\Sort a nearly sorted (or K sorted) array.vcxproj", "{D09813AE-9353-4457-8E41-E98538FC9628}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{048ABD73-DF02-427A-951D-45BD9F8AE0A4}.Release|x64.Build.0 = Release|x64
 		{048ABD73-DF02-427A-951D-45BD9F8AE0A4}.Release|x86.ActiveCfg = Release|Win32
 		{048ABD73-DF02-427A-951D-45BD9F8AE0A4}.Release|x86.Build.0 = Release|Win32
+		{D09813AE-9353-4457-8E41-E98538FC9628}.Debug|x64.ActiveCfg = Debug|x64
+		{D09813AE-9353-4457-8E41-E98538FC9628}.Debug|x64.Build.0 = Debug|x64
+		{D09813AE-9353-4457-8E41-E98538FC9628}.Debug|x86.ActiveCfg = Debug|Win32
+		{D09813AE-9353-4457-8E41-E98538FC9628}.Debug|x86.Build.0 = Debug|Win32
+		{D09813AE-9353-4457-8E41-E98538FC9628}.Release|x64.ActiveCfg = Release|x64
+		{D09813AE-9353-4457-8E41-E98538FC9628}.Release|x64.Build.0 = Release|x64
+		{D09813AE-9353-4457-8E41-E98538FC9628}.Release|x86.ActiveCfg = Release|Win32
+		{D09813AE-9353-4457-8E41-E98538FC9628}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
