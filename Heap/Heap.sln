@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Binary Heap", "Binary Heap\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Heap Sort", "Heap Sort\Heap Sort.vcxproj", "{AF9A6629-3D29-484F-9D1C-C96DBEDCB7E5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "k largest elements in an array", "k largest elements in an array\k largest elements in an array.vcxproj", "{048ABD73-DF02-427A-951D-45BD9F8AE0A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{AF9A6629-3D29-484F-9D1C-C96DBEDCB7E5}.Release|x64.Build.0 = Release|x64
 		{AF9A6629-3D29-484F-9D1C-C96DBEDCB7E5}.Release|x86.ActiveCfg = Release|Win32
 		{AF9A6629-3D29-484F-9D1C-C96DBEDCB7E5}.Release|x86.Build.0 = Release|Win32
+		{048ABD73-DF02-427A-951D-45BD9F8AE0A4}.Debug|x64.ActiveCfg = Debug|x64
+		{048ABD73-DF02-427A-951D-45BD9F8AE0A4}.Debug|x64.Build.0 = Debug|x64
+		{048ABD73-DF02-427A-951D-45BD9F8AE0A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{048ABD73-DF02-427A-951D-45BD9F8AE0A4}.Debug|x86.Build.0 = Debug|Win32
+		{048ABD73-DF02-427A-951D-45BD9F8AE0A4}.Release|x64.ActiveCfg = Release|x64
+		{048ABD73-DF02-427A-951D-45BD9F8AE0A4}.Release|x64.Build.0 = Release|x64
+		{048ABD73-DF02-427A-951D-45BD9F8AE0A4}.Release|x86.ActiveCfg = Release|Win32
+		{048ABD73-DF02-427A-951D-45BD9F8AE0A4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
