@@ -13,6 +13,7 @@ All the source code are structured properly and placed topicwise in folders.
 <li>Binary Tree</li>
 <li>Binary Search Tree</li>
 <li>Heap</li>
+<li>Hashing</li>
 </ul>
 
 <h2>Features</h2>
