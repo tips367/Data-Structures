@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Double hashing", "Double ha
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Print a Binary Tree in Vertical Order", "Print a Binary Tree in Vertical Order\Print a Binary Tree in Vertical Order.vcxproj", "{0C53A528-60F8-424E-9A9F-2649C14F8F9A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Find whether an array is subset of another array", "Find whether an array is subset of another array\Find whether an array is subset of another array.vcxproj", "{8DD71849-276C-41E9-9BF0-8093830EF10D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{0C53A528-60F8-424E-9A9F-2649C14F8F9A}.Release|x64.Build.0 = Release|x64
 		{0C53A528-60F8-424E-9A9F-2649C14F8F9A}.Release|x86.ActiveCfg = Release|Win32
 		{0C53A528-60F8-424E-9A9F-2649C14F8F9A}.Release|x86.Build.0 = Release|Win32
+		{8DD71849-276C-41E9-9BF0-8093830EF10D}.Debug|x64.ActiveCfg = Debug|x64
+		{8DD71849-276C-41E9-9BF0-8093830EF10D}.Debug|x64.Build.0 = Debug|x64
+		{8DD71849-276C-41E9-9BF0-8093830EF10D}.Debug|x86.ActiveCfg = Debug|Win32
+		{8DD71849-276C-41E9-9BF0-8093830EF10D}.Debug|x86.Build.0 = Debug|Win32
+		{8DD71849-276C-41E9-9BF0-8093830EF10D}.Release|x64.ActiveCfg = Release|x64
+		{8DD71849-276C-41E9-9BF0-8093830EF10D}.Release|x64.Build.0 = Release|x64
+		{8DD71849-276C-41E9-9BF0-8093830EF10D}.Release|x86.ActiveCfg = Release|Win32
+		{8DD71849-276C-41E9-9BF0-8093830EF10D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
