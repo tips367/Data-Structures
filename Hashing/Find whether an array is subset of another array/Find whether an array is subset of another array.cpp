@@ -14,6 +14,7 @@ Output: arr2[] is not a subset of arr1[]
 #include <algorithm>
 #include <set>
 #include <unordered_set>
+#include <map>
 
 // Method 1: Using sorting and merging...Time complexity : O(mlogm + nlogn)
 /*
@@ -71,6 +72,7 @@ bool isSubset(int arr1[], int arr2[], int sizeArr1, int sizeArr2)
 } */
 
 // Method 3: Using unordered set...Time complexity : O(m+n)
+/*
 bool isSubset(int arr1[], int arr2[], int sizeArr1, int sizeArr2)
 {
     std::unordered_set<int> s;
@@ -90,6 +92,28 @@ bool isSubset(int arr1[], int arr2[], int sizeArr1, int sizeArr2)
         return true;
     else
         return false;
+} */
+
+// Method 4: Using frequency table...Time complexity : O(m+n)
+bool isSubset(int arr1[], int arr2[], int sizeArr1, int sizeArr2)
+{
+    std::map<int, int> frequencyMap;
+
+    // Increase the frequency of each element in the frequency table.
+    for (int i = 0; i < sizeArr1; i++)
+    {
+        frequencyMap[arr1[i]]++;
+    }
+    // Decrease the frequency if the element was found in the frequency table with the frequency more than 0.
+    // else return 0 and if loop is completed return 1.
+    for (int i = 0; i < sizeArr2; i++)
+    {
+        if (frequencyMap[arr2[i]] > 0)
+            frequencyMap[arr2[i]]--;
+        else
+            return false;
+    }
+    return true;
 }
 
 int main()
