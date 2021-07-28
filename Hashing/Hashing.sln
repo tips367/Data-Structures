@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Print a Binary Tree in Vert
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Find whether an array is subset of another array", "Find whether an array is subset of another array\Find whether an array is subset of another array.vcxproj", "{8DD71849-276C-41E9-9BF0-8093830EF10D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Union and Intersection of two Linked Lists", "Union and Intersection of two Linked Lists\Union and Intersection of two Linked Lists.vcxproj", "{EAFB03D0-F89E-42D3-8AF1-58E954A5F8DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{8DD71849-276C-41E9-9BF0-8093830EF10D}.Release|x64.Build.0 = Release|x64
 		{8DD71849-276C-41E9-9BF0-8093830EF10D}.Release|x86.ActiveCfg = Release|Win32
 		{8DD71849-276C-41E9-9BF0-8093830EF10D}.Release|x86.Build.0 = Release|Win32
+		{EAFB03D0-F89E-42D3-8AF1-58E954A5F8DF}.Debug|x64.ActiveCfg = Debug|x64
+		{EAFB03D0-F89E-42D3-8AF1-58E954A5F8DF}.Debug|x64.Build.0 = Debug|x64
+		{EAFB03D0-F89E-42D3-8AF1-58E954A5F8DF}.Debug|x86.ActiveCfg = Debug|Win32
+		{EAFB03D0-F89E-42D3-8AF1-58E954A5F8DF}.Debug|x86.Build.0 = Debug|Win32
+		{EAFB03D0-F89E-42D3-8AF1-58E954A5F8DF}.Release|x64.ActiveCfg = Release|x64
+		{EAFB03D0-F89E-42D3-8AF1-58E954A5F8DF}.Release|x64.Build.0 = Release|x64
+		{EAFB03D0-F89E-42D3-8AF1-58E954A5F8DF}.Release|x86.ActiveCfg = Release|Win32
+		{EAFB03D0-F89E-42D3-8AF1-58E954A5F8DF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
