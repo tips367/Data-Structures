@@ -14,6 +14,7 @@ All the source code are structured properly and placed topicwise in folders.
 <li>Binary Search Tree</li>
 <li>Heap</li>
 <li>Hashing</li>
+<li>Graph</li>
 </ul>
 
 <h2>Features</h2>
