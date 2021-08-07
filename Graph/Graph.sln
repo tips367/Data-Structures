@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BFS for a Graph", "BFS for 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DFS for a Graph", "DFS for a Graph\DFS for a Graph.vcxproj", "{B25F4197-F2D3-405E-85C9-FFDC04C8FD2B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Detect Cycle in a Directed Graph", "Detect Cycle in a Directed Graph\Detect Cycle in a Directed Graph.vcxproj", "{4C8C6D89-2B8F-4E0F-BB78-3D07F83C0CD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{B25F4197-F2D3-405E-85C9-FFDC04C8FD2B}.Release|x64.Build.0 = Release|x64
 		{B25F4197-F2D3-405E-85C9-FFDC04C8FD2B}.Release|x86.ActiveCfg = Release|Win32
 		{B25F4197-F2D3-405E-85C9-FFDC04C8FD2B}.Release|x86.Build.0 = Release|Win32
+		{4C8C6D89-2B8F-4E0F-BB78-3D07F83C0CD1}.Debug|x64.ActiveCfg = Debug|x64
+		{4C8C6D89-2B8F-4E0F-BB78-3D07F83C0CD1}.Debug|x64.Build.0 = Debug|x64
+		{4C8C6D89-2B8F-4E0F-BB78-3D07F83C0CD1}.Debug|x86.ActiveCfg = Debug|Win32
+		{4C8C6D89-2B8F-4E0F-BB78-3D07F83C0CD1}.Debug|x86.Build.0 = Debug|Win32
+		{4C8C6D89-2B8F-4E0F-BB78-3D07F83C0CD1}.Release|x64.ActiveCfg = Release|x64
+		{4C8C6D89-2B8F-4E0F-BB78-3D07F83C0CD1}.Release|x64.Build.0 = Release|x64
+		{4C8C6D89-2B8F-4E0F-BB78-3D07F83C0CD1}.Release|x86.ActiveCfg = Release|Win32
+		{4C8C6D89-2B8F-4E0F-BB78-3D07F83C0CD1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
