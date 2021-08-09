@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Longest Path in a Directed 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Topological Sorting", "Topological Sorting\Topological Sorting.vcxproj", "{641B0111-16F5-426C-8BFB-029AC8BB3A3C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Graph is Bipartite or not", "Graph is Bipartite or not\Graph is Bipartite or not.vcxproj", "{F2D5F792-6505-4394-99CF-2E05E6063A52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{641B0111-16F5-426C-8BFB-029AC8BB3A3C}.Release|x64.Build.0 = Release|x64
 		{641B0111-16F5-426C-8BFB-029AC8BB3A3C}.Release|x86.ActiveCfg = Release|Win32
 		{641B0111-16F5-426C-8BFB-029AC8BB3A3C}.Release|x86.Build.0 = Release|Win32
+		{F2D5F792-6505-4394-99CF-2E05E6063A52}.Debug|x64.ActiveCfg = Debug|x64
+		{F2D5F792-6505-4394-99CF-2E05E6063A52}.Debug|x64.Build.0 = Debug|x64
+		{F2D5F792-6505-4394-99CF-2E05E6063A52}.Debug|x86.ActiveCfg = Debug|Win32
+		{F2D5F792-6505-4394-99CF-2E05E6063A52}.Debug|x86.Build.0 = Debug|Win32
+		{F2D5F792-6505-4394-99CF-2E05E6063A52}.Release|x64.ActiveCfg = Release|x64
+		{F2D5F792-6505-4394-99CF-2E05E6063A52}.Release|x64.Build.0 = Release|x64
+		{F2D5F792-6505-4394-99CF-2E05E6063A52}.Release|x86.ActiveCfg = Release|Win32
+		{F2D5F792-6505-4394-99CF-2E05E6063A52}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
