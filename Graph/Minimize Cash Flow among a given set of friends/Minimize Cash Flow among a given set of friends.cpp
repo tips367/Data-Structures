@@ -27,7 +27,7 @@ void minCashFlowRecur(int amount[])
 	amount[maxCreditIndex] -= min;
 	amount[maxDebitIndex] += min;
 
-	std::cout << "Person " << maxDebitIndex << " pays " << min << " to " << "Person " << maxCreditIndex << std::endl;
+	std::cout << "Person " << maxDebitIndex << " pays " << min << " to Person " << maxCreditIndex << std::endl;
 	minCashFlowRecur(amount);
 
 }
@@ -77,7 +77,7 @@ void minCashFlow(int graph[][N])
 
 		int min = std::min(abs(maxDebit.first), maxCredit.first);
 
-		std::cout << "Person " << maxDebit.second << " pays " << min << " to " << "Person " << maxCredit.second << std::endl;
+		std::cout << "Person " << maxDebit.second << " pays " << min << " to Person " << maxCredit.second << std::endl;
 		maxDebit.first += min;
 		maxCredit.first -= min;
 
