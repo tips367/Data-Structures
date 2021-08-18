@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MinJumpToReachEnd", "MinJum
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Leaders in an array", "Leaders in an array\Leaders in an array.vcxproj", "{B3C7A550-11CF-4070-8993-6B8DDC1FF509}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Two Sum", "Two Sum\Two Sum.vcxproj", "{DDC993D4-9E99-47AF-8D00-97780C5F31C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{B3C7A550-11CF-4070-8993-6B8DDC1FF509}.Release|x64.Build.0 = Release|x64
 		{B3C7A550-11CF-4070-8993-6B8DDC1FF509}.Release|x86.ActiveCfg = Release|Win32
 		{B3C7A550-11CF-4070-8993-6B8DDC1FF509}.Release|x86.Build.0 = Release|Win32
+		{DDC993D4-9E99-47AF-8D00-97780C5F31C9}.Debug|x64.ActiveCfg = Debug|x64
+		{DDC993D4-9E99-47AF-8D00-97780C5F31C9}.Debug|x64.Build.0 = Debug|x64
+		{DDC993D4-9E99-47AF-8D00-97780C5F31C9}.Debug|x86.ActiveCfg = Debug|Win32
+		{DDC993D4-9E99-47AF-8D00-97780C5F31C9}.Debug|x86.Build.0 = Debug|Win32
+		{DDC993D4-9E99-47AF-8D00-97780C5F31C9}.Release|x64.ActiveCfg = Release|x64
+		{DDC993D4-9E99-47AF-8D00-97780C5F31C9}.Release|x64.Build.0 = Release|x64
+		{DDC993D4-9E99-47AF-8D00-97780C5F31C9}.Release|x86.ActiveCfg = Release|Win32
+		{DDC993D4-9E99-47AF-8D00-97780C5F31C9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
