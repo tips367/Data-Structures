@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0c62a344-5eb4-4a79-9341-0eeed5538b62}</ProjectGuid>
-    <RootNamespace>MinimizeCashFlowamongagivensetoffriends</RootNamespace>
+    <ProjectGuid>{55d07503-ceb8-4497-b318-b44608db9536}</ProjectGuid>
+    <RootNamespace>MajorityElement</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Minimize Cash Flow among a given set of friends.cpp" />
+    <ClCompile Include="Majority Element.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

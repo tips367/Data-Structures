@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Leaders in an array", "Lead
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Two Sum", "Two Sum\Two Sum.vcxproj", "{DDC993D4-9E99-47AF-8D00-97780C5F31C9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Majority Element", "Majority Element\Majority Element.vcxproj", "{55D07503-CEB8-4497-B318-B44608DB9536}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{DDC993D4-9E99-47AF-8D00-97780C5F31C9}.Release|x64.Build.0 = Release|x64
 		{DDC993D4-9E99-47AF-8D00-97780C5F31C9}.Release|x86.ActiveCfg = Release|Win32
 		{DDC993D4-9E99-47AF-8D00-97780C5F31C9}.Release|x86.Build.0 = Release|Win32
+		{55D07503-CEB8-4497-B318-B44608DB9536}.Debug|x64.ActiveCfg = Debug|x64
+		{55D07503-CEB8-4497-B318-B44608DB9536}.Debug|x64.Build.0 = Debug|x64
+		{55D07503-CEB8-4497-B318-B44608DB9536}.Debug|x86.ActiveCfg = Debug|Win32
+		{55D07503-CEB8-4497-B318-B44608DB9536}.Debug|x86.Build.0 = Debug|Win32
+		{55D07503-CEB8-4497-B318-B44608DB9536}.Release|x64.ActiveCfg = Release|x64
+		{55D07503-CEB8-4497-B318-B44608DB9536}.Release|x64.Build.0 = Release|x64
+		{55D07503-CEB8-4497-B318-B44608DB9536}.Release|x86.ActiveCfg = Release|Win32
+		{55D07503-CEB8-4497-B318-B44608DB9536}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
