@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Majority Element", "Majorit
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Number Occurring Odd Number of Times", "Number Occurring Odd Number of Times\Number Occurring Odd Number of Times.vcxproj", "{6E41F7F3-B4D9-40F4-83A5-7A635B34D8CA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Largest Sum Contiguous Subarray", "Largest Sum Contiguous Subarray\Largest Sum Contiguous Subarray.vcxproj", "{CEE0A709-9DCB-4A67-B262-134A9BBF0BEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{6E41F7F3-B4D9-40F4-83A5-7A635B34D8CA}.Release|x64.Build.0 = Release|x64
 		{6E41F7F3-B4D9-40F4-83A5-7A635B34D8CA}.Release|x86.ActiveCfg = Release|Win32
 		{6E41F7F3-B4D9-40F4-83A5-7A635B34D8CA}.Release|x86.Build.0 = Release|Win32
+		{CEE0A709-9DCB-4A67-B262-134A9BBF0BEA}.Debug|x64.ActiveCfg = Debug|x64
+		{CEE0A709-9DCB-4A67-B262-134A9BBF0BEA}.Debug|x64.Build.0 = Debug|x64
+		{CEE0A709-9DCB-4A67-B262-134A9BBF0BEA}.Debug|x86.ActiveCfg = Debug|Win32
+		{CEE0A709-9DCB-4A67-B262-134A9BBF0BEA}.Debug|x86.Build.0 = Debug|Win32
+		{CEE0A709-9DCB-4A67-B262-134A9BBF0BEA}.Release|x64.ActiveCfg = Release|x64
+		{CEE0A709-9DCB-4A67-B262-134A9BBF0BEA}.Release|x64.Build.0 = Release|x64
+		{CEE0A709-9DCB-4A67-B262-134A9BBF0BEA}.Release|x86.ActiveCfg = Release|Win32
+		{CEE0A709-9DCB-4A67-B262-134A9BBF0BEA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
