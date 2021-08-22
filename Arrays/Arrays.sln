@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Find the Missing Number", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Search an element in a sorted and rotated array", "Search an element in a sorted and rotated array\Search an element in a sorted and rotated array.vcxproj", "{7622F61F-6B90-43C0-96AE-4833A9CE902D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Median of two sorted arrays", "Median of two sorted arrays\Median of two sorted arrays.vcxproj", "{D022685F-5DFC-494F-B0F2-12CCBD5B4D5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{7622F61F-6B90-43C0-96AE-4833A9CE902D}.Release|x64.Build.0 = Release|x64
 		{7622F61F-6B90-43C0-96AE-4833A9CE902D}.Release|x86.ActiveCfg = Release|Win32
 		{7622F61F-6B90-43C0-96AE-4833A9CE902D}.Release|x86.Build.0 = Release|Win32
+		{D022685F-5DFC-494F-B0F2-12CCBD5B4D5D}.Debug|x64.ActiveCfg = Debug|x64
+		{D022685F-5DFC-494F-B0F2-12CCBD5B4D5D}.Debug|x64.Build.0 = Debug|x64
+		{D022685F-5DFC-494F-B0F2-12CCBD5B4D5D}.Debug|x86.ActiveCfg = Debug|Win32
+		{D022685F-5DFC-494F-B0F2-12CCBD5B4D5D}.Debug|x86.Build.0 = Debug|Win32
+		{D022685F-5DFC-494F-B0F2-12CCBD5B4D5D}.Release|x64.ActiveCfg = Release|x64
+		{D022685F-5DFC-494F-B0F2-12CCBD5B4D5D}.Release|x64.Build.0 = Release|x64
+		{D022685F-5DFC-494F-B0F2-12CCBD5B4D5D}.Release|x86.ActiveCfg = Release|Win32
+		{D022685F-5DFC-494F-B0F2-12CCBD5B4D5D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
