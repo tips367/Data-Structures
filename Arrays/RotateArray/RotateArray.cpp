@@ -42,6 +42,7 @@ void leftRotate(int arr[], int n, int k)
 }*/
 
 // Method 3: Juggling Algorithm...Time : O(n), Space : O(1)
+/*
 int getGcd(int a, int b)
 {
     if (b == 0)
@@ -68,13 +69,37 @@ void leftRotate(int arr[], int n, int k)
         }
         arr[j] = temp;
     }
+} */
+
+// Method 4: Reversal Algorithm...Time : O(n), Space : O(1)
+void reverseArray(int arr[], int start, int end)
+{
+    while (start < end)
+    {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
 }
 
-void printArray(int A[], int size)
+void leftRotate(int arr[], int n, int k)
+{
+    k = k % n;  // in case the rotating factor is greater than array length
+    if (k == 0)
+        return;
+
+    reverseArray(arr, 0, k - 1);
+    reverseArray(arr, k, n - 1);
+    reverseArray(arr, 0, n - 1);
+}
+
+void printArray(int arr[], int size)
 {
     int i;
     for (i = 0; i < size; i++)
-        printf("%d ", A[i]);
+        printf("%d ", arr[i]);
     printf("\n");
 }
 
