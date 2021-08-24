@@ -26,6 +26,7 @@ void leftRotate(int arr[], int n, int k)
 } */
 
 // Method 2: Rotate one by one...Time : O(n * k), Space : O(1)
+/*
 void leftRotateByOne(int arr[], int n)
 {
     int temp = arr[0];
@@ -38,6 +39,35 @@ void leftRotate(int arr[], int n, int k)
 {
     for (int i = 0; i < k; i++)
         leftRotateByOne(arr, n);
+}*/
+
+// Method 3: Juggling Algorithm...Time : O(n), Space : O(1)
+int getGcd(int a, int b)
+{
+    if (b == 0)
+        return a;
+    else
+        return getGcd(b, a % b);
+}
+
+void leftRotate(int arr[], int n, int k)
+{
+    k = k % n;  // To handle if k>=n
+    int gcd = getGcd(n, k);
+    for (int i = 0; i < gcd; i++)
+    {
+        int temp = arr[i];
+        int j = i;
+        while (1)
+        {
+            int d = (j + k) % n;
+            if (d == i)
+                break;
+            arr[j] = arr[d];
+            j = d;
+        }
+        arr[j] = temp;
+    }
 }
 
 void printArray(int A[], int size)
