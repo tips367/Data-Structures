@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Print a given matrix in spi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Boolean Matrix Question", "Boolean Matrix Question\Boolean Matrix Question.vcxproj", "{4D61F44F-8962-449E-AC6E-ED4BD9D20A14}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Print unique rows in a given boolean matrix", "Print unique rows in a given boolean matrix\Print unique rows in a given boolean matrix.vcxproj", "{C76153D0-FDA2-48A5-9F5D-AEEB2E3A35E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{4D61F44F-8962-449E-AC6E-ED4BD9D20A14}.Release|x64.Build.0 = Release|x64
 		{4D61F44F-8962-449E-AC6E-ED4BD9D20A14}.Release|x86.ActiveCfg = Release|Win32
 		{4D61F44F-8962-449E-AC6E-ED4BD9D20A14}.Release|x86.Build.0 = Release|Win32
+		{C76153D0-FDA2-48A5-9F5D-AEEB2E3A35E6}.Debug|x64.ActiveCfg = Debug|x64
+		{C76153D0-FDA2-48A5-9F5D-AEEB2E3A35E6}.Debug|x64.Build.0 = Debug|x64
+		{C76153D0-FDA2-48A5-9F5D-AEEB2E3A35E6}.Debug|x86.ActiveCfg = Debug|Win32
+		{C76153D0-FDA2-48A5-9F5D-AEEB2E3A35E6}.Debug|x86.Build.0 = Debug|Win32
+		{C76153D0-FDA2-48A5-9F5D-AEEB2E3A35E6}.Release|x64.ActiveCfg = Release|x64
+		{C76153D0-FDA2-48A5-9F5D-AEEB2E3A35E6}.Release|x64.Build.0 = Release|x64
+		{C76153D0-FDA2-48A5-9F5D-AEEB2E3A35E6}.Release|x86.ActiveCfg = Release|Win32
+		{C76153D0-FDA2-48A5-9F5D-AEEB2E3A35E6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
