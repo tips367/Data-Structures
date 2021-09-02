@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Boolean Matrix Question", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Print unique rows in a given boolean matrix", "Print unique rows in a given boolean matrix\Print unique rows in a given boolean matrix.vcxproj", "{C76153D0-FDA2-48A5-9F5D-AEEB2E3A35E6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Maximum size square sub-matrix with all 1s", "Maximum size square sub-matrix with all 1s\Maximum size square sub-matrix with all 1s.vcxproj", "{BDD0A22C-67D0-4EEE-8CB1-6DA55CD2A1D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{C76153D0-FDA2-48A5-9F5D-AEEB2E3A35E6}.Release|x64.Build.0 = Release|x64
 		{C76153D0-FDA2-48A5-9F5D-AEEB2E3A35E6}.Release|x86.ActiveCfg = Release|Win32
 		{C76153D0-FDA2-48A5-9F5D-AEEB2E3A35E6}.Release|x86.Build.0 = Release|Win32
+		{BDD0A22C-67D0-4EEE-8CB1-6DA55CD2A1D6}.Debug|x64.ActiveCfg = Debug|x64
+		{BDD0A22C-67D0-4EEE-8CB1-6DA55CD2A1D6}.Debug|x64.Build.0 = Debug|x64
+		{BDD0A22C-67D0-4EEE-8CB1-6DA55CD2A1D6}.Debug|x86.ActiveCfg = Debug|Win32
+		{BDD0A22C-67D0-4EEE-8CB1-6DA55CD2A1D6}.Debug|x86.Build.0 = Debug|Win32
+		{BDD0A22C-67D0-4EEE-8CB1-6DA55CD2A1D6}.Release|x64.ActiveCfg = Release|x64
+		{BDD0A22C-67D0-4EEE-8CB1-6DA55CD2A1D6}.Release|x64.Build.0 = Release|x64
+		{BDD0A22C-67D0-4EEE-8CB1-6DA55CD2A1D6}.Release|x86.ActiveCfg = Release|Win32
+		{BDD0A22C-67D0-4EEE-8CB1-6DA55CD2A1D6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
