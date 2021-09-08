@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Print all elements in sorte
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Given an n x n square matrix, find sum of all sub-squares of size k x k", "Given an n x n square matrix, find sum of all sub-squares of size k x k\Given an n x n square matrix, find sum of all sub-squares of size k x k.vcxproj", "{BED10121-5C4E-43D9-AE29-2618641BE7E1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Count number of islands", "Count number of islands\Count number of islands.vcxproj", "{F8571D0D-3DA2-4617-85CE-738C05CA8345}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{BED10121-5C4E-43D9-AE29-2618641BE7E1}.Release|x64.Build.0 = Release|x64
 		{BED10121-5C4E-43D9-AE29-2618641BE7E1}.Release|x86.ActiveCfg = Release|Win32
 		{BED10121-5C4E-43D9-AE29-2618641BE7E1}.Release|x86.Build.0 = Release|Win32
+		{F8571D0D-3DA2-4617-85CE-738C05CA8345}.Debug|x64.ActiveCfg = Debug|x64
+		{F8571D0D-3DA2-4617-85CE-738C05CA8345}.Debug|x64.Build.0 = Debug|x64
+		{F8571D0D-3DA2-4617-85CE-738C05CA8345}.Debug|x86.ActiveCfg = Debug|Win32
+		{F8571D0D-3DA2-4617-85CE-738C05CA8345}.Debug|x86.Build.0 = Debug|Win32
+		{F8571D0D-3DA2-4617-85CE-738C05CA8345}.Release|x64.ActiveCfg = Release|x64
+		{F8571D0D-3DA2-4617-85CE-738C05CA8345}.Release|x64.Build.0 = Release|x64
+		{F8571D0D-3DA2-4617-85CE-738C05CA8345}.Release|x86.ActiveCfg = Release|Win32
+		{F8571D0D-3DA2-4617-85CE-738C05CA8345}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
