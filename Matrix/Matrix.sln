@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Given an n x n square matri
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Count number of islands", "Count number of islands\Count number of islands.vcxproj", "{F8571D0D-3DA2-4617-85CE-738C05CA8345}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common element in all rows of a given row-wise sorted matrix", "Common element in all rows of a given row-wise sorted matrix\Common element in all rows of a given row-wise sorted matrix.vcxproj", "{715B6797-51FF-4B04-95F7-782F400A1A1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{F8571D0D-3DA2-4617-85CE-738C05CA8345}.Release|x64.Build.0 = Release|x64
 		{F8571D0D-3DA2-4617-85CE-738C05CA8345}.Release|x86.ActiveCfg = Release|Win32
 		{F8571D0D-3DA2-4617-85CE-738C05CA8345}.Release|x86.Build.0 = Release|Win32
+		{715B6797-51FF-4B04-95F7-782F400A1A1F}.Debug|x64.ActiveCfg = Debug|x64
+		{715B6797-51FF-4B04-95F7-782F400A1A1F}.Debug|x64.Build.0 = Debug|x64
+		{715B6797-51FF-4B04-95F7-782F400A1A1F}.Debug|x86.ActiveCfg = Debug|Win32
+		{715B6797-51FF-4B04-95F7-782F400A1A1F}.Debug|x86.Build.0 = Debug|Win32
+		{715B6797-51FF-4B04-95F7-782F400A1A1F}.Release|x64.ActiveCfg = Release|x64
+		{715B6797-51FF-4B04-95F7-782F400A1A1F}.Release|x64.Build.0 = Release|x64
+		{715B6797-51FF-4B04-95F7-782F400A1A1F}.Release|x86.ActiveCfg = Release|Win32
+		{715B6797-51FF-4B04-95F7-782F400A1A1F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
