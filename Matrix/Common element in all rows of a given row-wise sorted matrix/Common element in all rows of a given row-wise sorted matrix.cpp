@@ -68,7 +68,7 @@ void findCommon(int mat[M][N])
     std::cout << "No common element";
 } */
 
-// Method 2 : Using HashMap
+// Method 2 : Using HashMap (works even if the rows are not sorted and can be used to print all common elements)
 void findCommon(int mat[M][N])
 {
     std::unordered_map<int, int> map;
