@@ -21,7 +21,7 @@ void insert(Node*& headRef, int data)
     Node* newNode = new Node();
     newNode->data = data;
 
-    // Since new node is inserted at the start , npm of new node will always be
+    // Since new node is inserted at the start , npx of new node will always be
     // Xor of current head and NULL
     newNode->npx = headRef;
 
