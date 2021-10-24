@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XOR Linked List", "XOR Linked List\XOR Linked List.vcxproj", "{286F626C-4C77-47B8-97D0-78F362D8EB60}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Segment Tree (Sum of given range)", "Segment Tree (Sum of given range)\Segment Tree (Sum of given range).vcxproj", "{EF8F4A19-C149-4157-A9A3-6F050BBF4898}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{286F626C-4C77-47B8-97D0-78F362D8EB60}.Release|x64.Build.0 = Release|x64
 		{286F626C-4C77-47B8-97D0-78F362D8EB60}.Release|x86.ActiveCfg = Release|Win32
 		{286F626C-4C77-47B8-97D0-78F362D8EB60}.Release|x86.Build.0 = Release|Win32
+		{EF8F4A19-C149-4157-A9A3-6F050BBF4898}.Debug|x64.ActiveCfg = Debug|x64
+		{EF8F4A19-C149-4157-A9A3-6F050BBF4898}.Debug|x64.Build.0 = Debug|x64
+		{EF8F4A19-C149-4157-A9A3-6F050BBF4898}.Debug|x86.ActiveCfg = Debug|Win32
+		{EF8F4A19-C149-4157-A9A3-6F050BBF4898}.Debug|x86.Build.0 = Debug|Win32
+		{EF8F4A19-C149-4157-A9A3-6F050BBF4898}.Release|x64.ActiveCfg = Release|x64
+		{EF8F4A19-C149-4157-A9A3-6F050BBF4898}.Release|x64.Build.0 = Release|x64
+		{EF8F4A19-C149-4157-A9A3-6F050BBF4898}.Release|x86.ActiveCfg = Release|Win32
+		{EF8F4A19-C149-4157-A9A3-6F050BBF4898}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
