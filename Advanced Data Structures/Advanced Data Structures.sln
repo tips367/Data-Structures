@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Segment Tree (Sum of given 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Segment Tree (Range Minimum Query)", "Segment Tree (Range Minimum Query)\Segment Tree (Range Minimum Query).vcxproj", "{0FEABED1-C7AC-48A6-B499-8C894B5BB9A2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AVL Tree", "AVL Tree\AVL Tree.vcxproj", "{ACA35928-CCD1-429C-B16F-013D220636FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{0FEABED1-C7AC-48A6-B499-8C894B5BB9A2}.Release|x64.Build.0 = Release|x64
 		{0FEABED1-C7AC-48A6-B499-8C894B5BB9A2}.Release|x86.ActiveCfg = Release|Win32
 		{0FEABED1-C7AC-48A6-B499-8C894B5BB9A2}.Release|x86.Build.0 = Release|Win32
+		{ACA35928-CCD1-429C-B16F-013D220636FA}.Debug|x64.ActiveCfg = Debug|x64
+		{ACA35928-CCD1-429C-B16F-013D220636FA}.Debug|x64.Build.0 = Debug|x64
+		{ACA35928-CCD1-429C-B16F-013D220636FA}.Debug|x86.ActiveCfg = Debug|Win32
+		{ACA35928-CCD1-429C-B16F-013D220636FA}.Debug|x86.Build.0 = Debug|Win32
+		{ACA35928-CCD1-429C-B16F-013D220636FA}.Release|x64.ActiveCfg = Release|x64
+		{ACA35928-CCD1-429C-B16F-013D220636FA}.Release|x64.Build.0 = Release|x64
+		{ACA35928-CCD1-429C-B16F-013D220636FA}.Release|x86.ActiveCfg = Release|Win32
+		{ACA35928-CCD1-429C-B16F-013D220636FA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
