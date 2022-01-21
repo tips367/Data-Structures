@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Maximum XOR of Two Numbers 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Maximum XOR With an Element From Array", "Maximum XOR With an Element From Array\Maximum XOR With an Element From Array.vcxproj", "{A19A1DE1-BA80-46FC-8061-1E1D7BE2071C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Longest Common Prefix", "Longest Common Prefix\Longest Common Prefix.vcxproj", "{721232A6-1D26-4162-B264-21DAA9B1BDA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{A19A1DE1-BA80-46FC-8061-1E1D7BE2071C}.Release|x64.Build.0 = Release|x64
 		{A19A1DE1-BA80-46FC-8061-1E1D7BE2071C}.Release|x86.ActiveCfg = Release|Win32
 		{A19A1DE1-BA80-46FC-8061-1E1D7BE2071C}.Release|x86.Build.0 = Release|Win32
+		{721232A6-1D26-4162-B264-21DAA9B1BDA6}.Debug|x64.ActiveCfg = Debug|x64
+		{721232A6-1D26-4162-B264-21DAA9B1BDA6}.Debug|x64.Build.0 = Debug|x64
+		{721232A6-1D26-4162-B264-21DAA9B1BDA6}.Debug|x86.ActiveCfg = Debug|Win32
+		{721232A6-1D26-4162-B264-21DAA9B1BDA6}.Debug|x86.Build.0 = Debug|Win32
+		{721232A6-1D26-4162-B264-21DAA9B1BDA6}.Release|x64.ActiveCfg = Release|x64
+		{721232A6-1D26-4162-B264-21DAA9B1BDA6}.Release|x64.Build.0 = Release|x64
+		{721232A6-1D26-4162-B264-21DAA9B1BDA6}.Release|x86.ActiveCfg = Release|Win32
+		{721232A6-1D26-4162-B264-21DAA9B1BDA6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
