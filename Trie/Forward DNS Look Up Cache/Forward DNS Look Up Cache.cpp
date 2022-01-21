@@ -1,10 +1,9 @@
-/* Reverse DNS look up is using an internet IP address to find a domain name. For example, if you type 74.125.200.106 in browser, 
-it automatically redirects to google.in. 
+/* Forward DNS look up is getting IP address for a given domain name typed in the web browser.
 
-Following are the operations needed from cache:
+The cache should do the following operations :
 
--Add an IP address to URL Mapping in cache.
--Find URL for a given IP address.
+1. Add a mapping from URL to IP address
+2. Find IP address for a given URL. 
 */
 
 #include <iostream>
@@ -12,21 +11,21 @@ Following are the operations needed from cache:
 #include <iostream>
 #include <vector>
 
-// There are atmost 11 different chars in a valid IP address
-#define CHARS 11
+// There are atmost 27 different chars in a valid URL assuming URL consists [a-z] and (.)
+#define CHARS 27
 
 using namespace std;
 
-int getIndex(char c) 
-{ 
-    return (c == '.') ? 10 : (c - '0'); 
+int getIndex(char c)
+{
+    return (c == '.') ? 26 : (c - 'a');
 }
 
 class TrieNode
 {
 public:
     bool isEnd;
-    string URL;
+    string IPAddr;
     TrieNode* child[CHARS];
     bool containsKey(char ch)
     {
@@ -52,7 +51,7 @@ private:
     {
         TrieNode* newNode = new TrieNode();
         newNode->isEnd = false;
-        newNode->URL = "";
+        newNode->IPAddr = "";
         for (int i = 0; i < CHARS; i++)
             newNode->child[i] = nullptr;
         return newNode;
@@ -61,23 +60,23 @@ private:
 public:
     Trie() : root(getNode()) {}
 
-    void insert(string& ipAddress, string& url)
+    void insert(string& url, string& ipAddress)
     {
         TrieNode* curr = root;
-        for (char c : ipAddress)
+        for (char c : url)
         {
             if (!curr->containsKey(c))
                 curr->put(c, getNode());
             curr = curr->getNext(c);
         }
         curr->isEnd = true;
-        curr->URL = url;
+        curr->IPAddr = ipAddress;
     }
 
-    string searchDNSCache(string& ipAddress)
+    string searchDNSCache(string& url)
     {
         TrieNode* curr = root;
-        for (char c : ipAddress)
+        for (char c : url)
         {
             if (!curr->containsKey(c))
                 return "";
@@ -86,29 +85,28 @@ public:
 
         // If we find the last node for a given ip address, print the URL
         if (curr != nullptr && curr->isEnd)
-            return curr->URL;
+            return curr->IPAddr;
         return "";
     }
-
 };
 
 int main()
 {
-    vector<pair<string, string>> ipUrl = { {"107.108.11.123", "www.samsung.com"}, 
-                                           {"107.109.123.255", "www.samsung.net"}, 
-                                           {"74.125.200.106", "www.google.in"} };
+    vector<pair<string, string>> urlIP = { {"www.samsung.com", "107.108.11.123"},
+                                           {"www.samsung.net", "107.109.123.255"},
+                                           {"www.google.in", "74.125.200.106"} };
 
     Trie trie;
-    for (auto& it : ipUrl)
+    for (auto& it : urlIP)
         trie.insert(it.first, it.second);
 
-    string ipToSearch = "74.125.200.106";
-    string resolvedUrl = trie.searchDNSCache(ipToSearch);
+    string urlToSearch = "www.samsung.net";
+    string resolvedIP = trie.searchDNSCache(urlToSearch);
 
-    if (resolvedUrl == "")
-        cout << "Reverse DNS look up not resolved in cache" << endl;
+    if (resolvedIP == "")
+        cout << "Forward DNS look up not resolved in cache" << endl;
     else
-        cout << "Reverse DNS look up resolved in cache\n" << ipToSearch << "-->" << resolvedUrl << endl;
+        cout << "Forward DNS look up resolved in cache\n" << urlToSearch << "-->" << resolvedIP << endl;
 
     return 0;
 }
