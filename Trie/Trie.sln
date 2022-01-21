@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Trie (Prefix Tree)", "Trie (Prefix Tree)\Trie (Prefix Tree).vcxproj", "{B96FBC95-BF29-416E-8C39-94F00550C8EF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Design Add and Search Words Data Structure", "Design Add and Search Words Data Structure\Design Add and Search Words Data Structure.vcxproj", "{E2548C59-5E6E-453D-8778-EABCFC9148D8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Maximum XOR of Two Numbers in an Array", "Maximum XOR of Two Numbers in an Array\Maximum XOR of Two Numbers in an Array.vcxproj", "{FC7467CE-86FC-46A9-BF21-BE01F4F2346D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +25,22 @@ Global
 		{B96FBC95-BF29-416E-8C39-94F00550C8EF}.Release|x64.Build.0 = Release|x64
 		{B96FBC95-BF29-416E-8C39-94F00550C8EF}.Release|x86.ActiveCfg = Release|Win32
 		{B96FBC95-BF29-416E-8C39-94F00550C8EF}.Release|x86.Build.0 = Release|Win32
+		{E2548C59-5E6E-453D-8778-EABCFC9148D8}.Debug|x64.ActiveCfg = Debug|x64
+		{E2548C59-5E6E-453D-8778-EABCFC9148D8}.Debug|x64.Build.0 = Debug|x64
+		{E2548C59-5E6E-453D-8778-EABCFC9148D8}.Debug|x86.ActiveCfg = Debug|Win32
+		{E2548C59-5E6E-453D-8778-EABCFC9148D8}.Debug|x86.Build.0 = Debug|Win32
+		{E2548C59-5E6E-453D-8778-EABCFC9148D8}.Release|x64.ActiveCfg = Release|x64
+		{E2548C59-5E6E-453D-8778-EABCFC9148D8}.Release|x64.Build.0 = Release|x64
+		{E2548C59-5E6E-453D-8778-EABCFC9148D8}.Release|x86.ActiveCfg = Release|Win32
+		{E2548C59-5E6E-453D-8778-EABCFC9148D8}.Release|x86.Build.0 = Release|Win32
+		{FC7467CE-86FC-46A9-BF21-BE01F4F2346D}.Debug|x64.ActiveCfg = Debug|x64
+		{FC7467CE-86FC-46A9-BF21-BE01F4F2346D}.Debug|x64.Build.0 = Debug|x64
+		{FC7467CE-86FC-46A9-BF21-BE01F4F2346D}.Debug|x86.ActiveCfg = Debug|Win32
+		{FC7467CE-86FC-46A9-BF21-BE01F4F2346D}.Debug|x86.Build.0 = Debug|Win32
+		{FC7467CE-86FC-46A9-BF21-BE01F4F2346D}.Release|x64.ActiveCfg = Release|x64
+		{FC7467CE-86FC-46A9-BF21-BE01F4F2346D}.Release|x64.Build.0 = Release|x64
+		{FC7467CE-86FC-46A9-BF21-BE01F4F2346D}.Release|x86.ActiveCfg = Release|Win32
+		{FC7467CE-86FC-46A9-BF21-BE01F4F2346D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
