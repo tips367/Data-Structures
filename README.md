@@ -16,6 +16,7 @@ All the source code are structured properly and placed topicwise in folders.
 <li>Hashing</li>
 <li>Graph</li>
 <li>Matrix</li>
+<li>Trie</li>
 <li>Advanced Data Structures</li> 
 </ul>
 
